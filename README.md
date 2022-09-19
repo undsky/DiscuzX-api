@@ -16,3 +16,14 @@
 ### uni-app 客户端
 
 [开源版](https://ext.dcloud.net.cn/plugin?id=5450)
+
+### issues
+
++ 板块不显示
+
+论坛/板块管理，设置两级
+ 应用/小云APP手机客户端/设置/能在客户端显示的版块
+
++ 板块分类设置
+
+![](/resource/A6F0136B-2EC8-41E3-91C4-28678C6B3366.png)
