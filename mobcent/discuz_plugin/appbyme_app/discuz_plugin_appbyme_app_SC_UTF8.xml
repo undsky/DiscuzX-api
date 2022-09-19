@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2016-04-19 11:13]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[小云APP手机客户端]]></item>
+			<item id="identifier"><![CDATA[appbyme_app]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[appbyme_app/]]></item>
+			<item id="copyright"><![CDATA[小云APP]]></item>
+			<item id="version"><![CDATA[v1.4.3.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[forum]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[论坛管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[10]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[portal]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[门户管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[11]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[operation]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[运营]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[12]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[seo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[SEO设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[20]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[cp_open]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[开放管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[25]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+
+				<item id="5">
+					<item id="name"><![CDATA[cp_reg]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[注册资料项]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[28]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="6">
+					<item id="name"><![CDATA[cp_jump]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[微站跳转设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[26]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="7">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更新缓存]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[30]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="8">
+					<item id="name"><![CDATA[plugin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[转换接口包管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[40]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="9">
+					<item id="name"><![CDATA[main]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="10">
+					<item id="name"><![CDATA[main_mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[80]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[新建应用时的验证密码]]></item>
+				<item id="description"><![CDATA[只能输入数字，并且最大长度为10]]></item>
+				<item id="variable"><![CDATA[install_password]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[12345678]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否开启门户模块]]></item>
+				<item id="description"><![CDATA[注意，修改此项之后需要新建或者更新应用才会在客户端产生效果]]></item>
+				<item id="variable"><![CDATA[portal_allow_open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[缓存定时自动更新时间]]></item>
+				<item id="description"><![CDATA[设置每天定点执行更新缓存操作, 请按照以下格式修改时间
+[hh:mm],
+其中hh为小时，必须占用两个空间，范围为 00 - 23
+mm为分钟，必须占用两个空间，范围为 00 - 59,
+如[05:30]]]></item>
+				<item id="variable"><![CDATA[cache_update_time]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[[04:30]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[缓存自动更新间隔(秒)]]></item>
+				<item id="description"><![CDATA[自动执行更新缓存的时间间隔, 0为关闭,  建议设置为43200。请注意，更新缓存操作对服务器端的压力会很大！ 请按照服务器的实际情况设置]]></item>
+				<item id="variable"><![CDATA[cache_update_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[版块列表缓存有效期(秒)]]></item>
+				<item id="description"><![CDATA[设置版块列表缓存更新的时间,  0 为关闭,  建议设置为 600,  更改参数之后要重新生成缓存]]></item>
+				<item id="variable"><![CDATA[cache_forumlist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[主题列表缓存有效期(秒)]]></item>
+				<item id="description"><![CDATA[设置主题列表缓存更新的时间, 0 为关闭, 建议设置为7200 , 更改参数之后要重新生成缓存]]></item>
+				<item id="variable"><![CDATA[cache_topiclist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[门户列表缓存有效期(秒)]]></item>
+				<item id="description"><![CDATA[设置门户列表缓存更新的时间, 0 为关闭, 建议设置为600 , 更改参数之后要重新生成缓存]]></item>
+				<item id="variable"><![CDATA[cache_newslist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[缓存有效的用户组]]></item>
+				<item id="description"><![CDATA[缓存只对设置的用户有效，请注意当空选中时，代表全不选]]></item>
+				<item id="variable"><![CDATA[cache_usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[9]]></item>
+					<item id="1"><![CDATA[10]]></item>
+					<item id="2"><![CDATA[11]]></item>
+					<item id="3"><![CDATA[12]]></item>
+					<item id="4"><![CDATA[13]]></item>
+					<item id="5"><![CDATA[14]]></item>
+					<item id="6"><![CDATA[15]]></item>
+					<item id="7"><![CDATA[20]]></item>
+					<item id="8"><![CDATA[16]]></item>
+					<item id="9"><![CDATA[17]]></item>
+					<item id="10"><![CDATA[18]]></item>
+					<item id="11"><![CDATA[19]]></item>
+					<item id="12"><![CDATA[1]]></item>
+					<item id="13"><![CDATA[2]]></item>
+					<item id="14"><![CDATA[3]]></item>
+					<item id="15"><![CDATA[4]]></item>
+					<item id="16"><![CDATA[5]]></item>
+					<item id="17"><![CDATA[6]]></item>
+					<item id="18"><![CDATA[7]]></item>
+					<item id="19"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[缓存定时删除周期(天)]]></item>
+				<item id="description"><![CDATA[设置缓存定时删除周期(天), 0 为关闭]]></item>
+				<item id="variable"><![CDATA[cache_clean_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[消息通知请求周期(秒)]]></item>
+				<item id="description"><![CDATA[客户端收到消息通知的间隔时间, 建议设置120, 此值过小会增加服务器的压力, 请按照服务器的实际情况设置]]></item>
+				<item id="variable"><![CDATA[message_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[120]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[私信聊天通知间隔(秒)]]></item>
+				<item id="description"><![CDATA[客户端在聊天页面时收到消息通知的间隔时间, 建议设置20, 此值过小会增加服务器的压力, 请按照服务器的实际情况设置]]></item>
+				<item id="variable"><![CDATA[message_pm_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[私信发送语音限制(秒)]]></item>
+				<item id="description"><![CDATA[设置客户端私信聊天时发送语音的长度限制,-1为不能发送,0为无限制]]></item>
+				<item id="variable"><![CDATA[message_pm_audio_limit]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[是否生成缩略图]]></item>
+				<item id="description"><![CDATA[选择生成缩略图, 会给服务器造成一定的压力,
+不生成缩略图, 则会给用户造成带宽压力, 以及配置比较差的手机客户端闪退会比较频繁]]></item>
+				<item id="variable"><![CDATA[image_isthumb]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[缩略图自动生成间隔(秒)]]></item>
+				<item id="description"><![CDATA[自动生成缩略图的时间间隔;
+0为关闭,即根据缩略图开关,当客户端刷新列表时,实时生成缩略图;
+建议设置为60。当此值大于0时,将会自动把缩略图任务放在后台,按照此间隔生成缩略图(每次的任务个数由配置设定);
+由于这任务对服务器端的压力很大！ 请按照服务器的实际情况配置]]></item>
+				<item id="variable"><![CDATA[image_thumb_make_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[120]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[缩略图后台每次任务数]]></item>
+				<item id="description"><![CDATA[缩略图每一次间隔自动生成时的裁图个数]]></item>
+				<item id="variable"><![CDATA[image_thumb_task_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[缩略图后台最大任务数]]></item>
+				<item id="description"><![CDATA[添加到缩略图后台生成任务中的最大任务数,0为无限制]]></item>
+				<item id="variable"><![CDATA[image_thumb_task_max_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[50]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[25]]></item>
+				<item id="title"><![CDATA[生成的缩略大图最短边长度]]></item>
+				<item id="description"><![CDATA[建议设置为640]]></item>
+				<item id="variable"><![CDATA[image_thumb_big_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[640]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[26]]></item>
+				<item id="title"><![CDATA[生成的缩略小图最短边长度]]></item>
+				<item id="description"><![CDATA[建议设置为380]]></item>
+				<item id="variable"><![CDATA[image_thumb_small_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[380]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[27]]></item>
+				<item id="title"><![CDATA[缩略图定时删除周期(天)]]></item>
+				<item id="description"><![CDATA[设置缩略图定时删除周期(天), 0 为关闭]]></item>
+				<item id="variable"><![CDATA[image_thumb_clean_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[28]]></item>
+				<item id="title"><![CDATA[是否启用dz的缩略图]]></item>
+				<item id="description"><![CDATA[当启用此选项时,就会调用dz自己的缩略图,减少服务器的压力,只是缩略图的大小不再受上面的配置控制]]></item>
+				<item id="variable"><![CDATA[image_thumb_allow_discuz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[29]]></item>
+				<item id="title"><![CDATA[是否允许手机客户端注册]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_register]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[29]]></item>
+				<item id="title"><![CDATA[客户端注册默认用户组]]></item>
+				<item id="description"><![CDATA[客户端注册用户的默认用户组，留空表示使用默认注册用户组]]></item>
+				<item id="variable"><![CDATA[mobile_register_group]]></item>
+				<item id="type"><![CDATA[group]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[30]]></item>
+				<item id="title"><![CDATA[客户端注册网址]]></item>
+				<item id="description"><![CDATA[设置手机客户端注册网址,该值不为空时,客户端将采用此url(请以http://开头)来注册,如果想用客户端注册,请设为空]]></item>
+				<item id="variable"><![CDATA[mobile_register_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[是否允许qq登陆]]></item>
+				<item id="description"><![CDATA[设置变更之后，重新启动应用才会有效]]></item>
+				<item id="variable"><![CDATA[mobile_allow_qqlogin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[是否允许微信登陆]]></item>
+				<item id="description"><![CDATA[设置变更之后，重新启动应用才会有效]]></item>
+				<item id="variable"><![CDATA[mobile_allow_wxlogin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="25">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[微信登陆是否自动注册]]></item>
+				<item id="description"><![CDATA[开启之后，微信登陆后会自动注册]]></item>
+				<item id="variable"><![CDATA[is_wechat_register]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="26">
+				<item id="displayorder"><![CDATA[32]]></item>
+				<item id="title"><![CDATA[是否开启客户端签到]]></item>
+				<item id="description"><![CDATA[设置是否开启客户端的签到功能，设置变更之后，重新启动客户端才会有效]]></item>
+				<item id="variable"><![CDATA[mobile_allow_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="27">
+				<item id="displayorder"><![CDATA[33]]></item>
+				<item id="title"><![CDATA[签到发帖文字]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_sign_text]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[哎...今天够累的，来自客户端的签到]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="28">
+				<item id="displayorder"><![CDATA[34]]></item>
+				<item id="title"><![CDATA[发帖签名(主题列表页)]]></item>
+				<item id="description"><![CDATA[请按照如下格式填写
+[title_xxx]发帖签名html代码[/title_xxx]
+注意:
+1. xxx可为all,android,apple
+2.当存在title_all时,所有平台都会应用该签名忽略其他设置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_thread]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_all]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自手机客户端" align="absmiddle">[/title_all]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="29">
+				<item id="displayorder"><![CDATA[35]]></item>
+				<item id="title"><![CDATA[发帖签名位置(帖子内容页)]]></item>
+				<item id="description"><![CDATA[设置在帖子内容页的发帖签名位置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_position]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[postbottom]]></item>
+				<item id="extra"><![CDATA[postheader=帖子顶部
+posttop=帖子内容顶部
+postbottom=帖子内容底部
+postfooter=帖子底部
+postsightmlafter=个人签名底部
+0=无]]></item>
+			</item>
+			<item id="30">
+				<item id="displayorder"><![CDATA[36]]></item>
+				<item id="title"><![CDATA[发帖签名(帖子内容页)]]></item>
+				<item id="description"><![CDATA[请参照 发帖签名(主题列表页) 设置项说明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_post]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自安卓客户端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">来自安卓客户端</a>[/title_android]
+[title_apple]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自苹果客户端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">来自苹果客户端</a>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="31">
+				<item id="displayorder"><![CDATA[37]]></item>
+				<item id="title"><![CDATA[发帖签名(帖子内容页头像)]]></item>
+				<item id="description"><![CDATA[请参照 发帖签名(主题列表页) 设置项说明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_avatar]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<div><img style="margin: -145px 0 0 100px;" src="mobcent/app/web/images/mobile/mobile-android.png" /></div>[/title_android]
+[title_apple]<div><img style="margin: -145px 0 0 100px;" src="mobcent/app/web/images/mobile/mobile-ios.png" /></div>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="32">
+				<item id="displayorder"><![CDATA[41]]></item>
+				<item id="title"><![CDATA[发帖签名(主题列表页-wap)]]></item>
+				<item id="description"><![CDATA[请参照 发帖签名(主题列表页) 设置项说明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_thread_mobile]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_all]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自手机客户端" align="absmiddle">[/title_all]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="33">
+				<item id="displayorder"><![CDATA[42]]></item>
+				<item id="title"><![CDATA[签名位置(帖子内容页-wap)]]></item>
+				<item id="description"><![CDATA[设置在帖子内容页(手机版)的发帖签名位置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_position_mobile]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[postbottom]]></item>
+				<item id="extra"><![CDATA[posttop=帖子内容顶部
+postbottom=帖子内容底部
+0=无]]></item>
+			</item>
+			<item id="34">
+				<item id="displayorder"><![CDATA[43]]></item>
+				<item id="title"><![CDATA[发帖签名(帖子内容页-wap)]]></item>
+				<item id="description"><![CDATA[请参照 发帖签名(主题列表页) 设置项说明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_post_mobile]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自安卓客户端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">来自安卓客户端</a>[/title_android]
+[title_apple]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="来自苹果客户端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">来自苹果客户端</a>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="35">
+				<item id="displayorder"><![CDATA[45]]></item>
+				<item id="title"><![CDATA[是否开启签到发帖签名]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_sign_with_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="36">
+				<item id="displayorder"><![CDATA[46]]></item>
+				<item id="title"><![CDATA[是否在客户端显示发帖签名]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_app_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="37">
+				<item id="displayorder"><![CDATA[47]]></item>
+				<item id="title"><![CDATA[是否开启原手机页跳转]]></item>
+				<item id="description"><![CDATA[设置论坛手机版默认下载地址跳转,如果开启,原论坛的默认手机版下载地址将跳转到由小云APP生成的手机客户端下载地址]]></item>
+				<item id="variable"><![CDATA[mobile_allow_download_redirect]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="38">
+				<item id="displayorder"><![CDATA[60]]></item>
+				<item id="title"><![CDATA[是否显示今日发帖数]]></item>
+				<item id="description"><![CDATA[设置变更之后，重新启动应用才会有效]]></item>
+				<item id="variable"><![CDATA[forum_show_today_post]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="39">
+				<item id="displayorder"><![CDATA[61]]></item>
+				<item id="title"><![CDATA[论坛主题列表的摘要长度]]></item>
+				<item id="description"><![CDATA[设置范围为 0-255,如果开启了缓存,请进行更新缓存操作]]></item>
+				<item id="variable"><![CDATA[forum_summary_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[255]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="40">
+				<item id="displayorder"><![CDATA[62]]></item>
+				<item id="title"><![CDATA[门户列表摘要长度]]></item>
+				<item id="description"><![CDATA[设置范围为 0-255,如果开启了缓存,请进行更新缓存操作]]></item>
+				<item id="variable"><![CDATA[portal_summary_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[255]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="41">
+				<item id="displayorder"><![CDATA[63]]></item>
+				<item id="title"><![CDATA[论坛主题列表显示图片]]></item>
+				<item id="description"><![CDATA[如果开启了缓存,请进行更新缓存操作]]></item>
+				<item id="variable"><![CDATA[forum_allow_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="42">
+				<item id="displayorder"><![CDATA[64]]></item>
+				<item id="title"><![CDATA[门户列表显示图片]]></item>
+				<item id="description"><![CDATA[如果开启了缓存,请进行更新缓存操作]]></item>
+				<item id="variable"><![CDATA[portal_allow_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="43">
+				<item id="displayorder"><![CDATA[65]]></item>
+				<item id="title"><![CDATA[开启客户端主题评价]]></item>
+				<item id="description"><![CDATA[对应客户端的赞功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_topic_recommend]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="44">
+				<item id="displayorder"><![CDATA[66]]></item>
+				<item id="title"><![CDATA[开启客户端帖子评价]]></item>
+				<item id="description"><![CDATA[对应客户端的赞功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_post_recommend]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="45">
+				<item id="displayorder"><![CDATA[67]]></item>
+				<item id="title"><![CDATA[开启客户端主题评分]]></item>
+				<item id="description"><![CDATA[对应客户端的评分功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_topic_rate]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="46">
+				<item id="displayorder"><![CDATA[70]]></item>
+				<item id="title"><![CDATA[公告显示栏目]]></item>
+				<item id="description"><![CDATA[设置公告可以在论坛哪些栏目显示, 空代表全不选
+按住 CTRL 多选]]></item>
+				<item id="variable"><![CDATA[forum_announcement_show]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[0=空
+1=全部
+2=新帖
+3=精华
+4=置顶]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+					<item id="3"><![CDATA[4]]></item>
+				</item>
+			</item>
+			<item id="47">
+				<item id="displayorder"><![CDATA[71]]></item>
+				<item id="title"><![CDATA[主题分类类别前缀]]></item>
+				<item id="description"><![CDATA[客户端主题列表是否显示主题分类前缀]]></item>
+				<item id="variable"><![CDATA[forum_allow_topictype_prefix]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="48">
+				<item id="displayorder"><![CDATA[72]]></item>
+				<item id="title"><![CDATA[分类信息类别前缀]]></item>
+				<item id="description"><![CDATA[客户端主题列表是否显示分类信息前缀]]></item>
+				<item id="variable"><![CDATA[forum_allow_topicsort_prefix]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="49">
+				<item id="displayorder"><![CDATA[73]]></item>
+				<item id="title"><![CDATA[开启上传附件插件]]></item>
+				<item id="description"><![CDATA[如果你用了阿里云等上传附件的插件,当关闭此选项时上传图片失败时,请尝试打开此选项;
+注意,此选项只适用于用了上述插件的用户!!!]]></item>
+				<item id="variable"><![CDATA[forum_allow_upload_with_plugin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="50">
+				<item id="displayorder"><![CDATA[74]]></item>
+				<item id="title"><![CDATA[帖子详情列表默认排序]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[forum_postlist_orderby]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0=正序浏览
+1=倒序浏览]]></item>
+			</item>
+			<item id="51">
+				<item id="displayorder"><![CDATA[75]]></item>
+				<item id="title"><![CDATA[帖子发送语音的限制(秒)]]></item>
+				<item id="description"><![CDATA[设置客户端发帖时发送语音的长度限制,-1为不能发送,0为无限制]]></item>
+				<item id="variable"><![CDATA[forum_audio_limit]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="52">
+				<item id="displayorder"><![CDATA[76]]></item>
+				<item id="title"><![CDATA[默认开启回帖定位]]></item>
+				<item id="description"><![CDATA[设置客户端回帖时是否默认显示地理定位]]></item>
+				<item id="variable"><![CDATA[forum_allow_newpost_location]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="53">
+				<item id="displayorder"><![CDATA[76]]></item>
+				<item id="title"><![CDATA[是否开启附件下载功能]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[forum_allow_attachment]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="54">
+				<item id="displayorder"><![CDATA[76]]></item>
+				<item id="title"><![CDATA[默认开启发帖定位]]></item>
+				<item id="description"><![CDATA[设置客户端发帖时是否默认显示地理定位]]></item>
+				<item id="variable"><![CDATA[forum_allow_newtopic_location]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="55">
+				<item id="displayorder"><![CDATA[77]]></item>
+				<item id="title"><![CDATA[是否能发送特殊字符(gbk)]]></item>
+				<item id="description"><![CDATA[如果discuz网站采用的是gbk编码,客户端目前是发送不了一些特殊字符(如韩文),想能发送就打开该设置
+ 注意:此配置项仅针对gbk编码的站点,如无特殊需求,请不要打开!
+ 最好自己先测试一下,如果客户端能发自己想要的字符,就不要打开该选项!]]></item>
+				<item id="variable"><![CDATA[forum_allow_gbk_special]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="56">
+				<item id="displayorder"><![CDATA[80]]></item>
+				<item id="title"><![CDATA[能在客户端显示的版块]]></item>
+				<item id="description"><![CDATA[如果开启了缓存,请在修改过后重新生成缓存,
+当有子版块的时候也请根据需要进行选择,没有选择的版块将没有发帖等权限,
+请注意当空选中时，代表全不选]]></item>
+				<item id="variable"><![CDATA[forum_show]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="57">
+				<item id="displayorder"><![CDATA[81]]></item>
+				<item id="title"><![CDATA[能显示版块图标的版块]]></item>
+				<item id="description"><![CDATA[如果开启了缓存,请在修改过后重新生成缓存，请注意当空选中时，代表全不选]]></item>
+				<item id="variable"><![CDATA[forum_show_image]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="58">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[能显示在图库中的版块]]></item>
+				<item id="description"><![CDATA[请注意当空选中时，代表全不选]]></item>
+				<item id="variable"><![CDATA[forum_photo_show]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="59">
+				<item id="displayorder"><![CDATA[90]]></item>
+				<item id="title"><![CDATA[小云APP后台管理用户]]></item>
+				<item id="description"><![CDATA[设置能在小云APP后台管理的用户, 多个用户名用半角逗号 "," 隔开]]></item>
+				<item id="variable"><![CDATA[appbyme_allow_admin_users]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[admin]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="60">
+				<item id="displayorder"><![CDATA[91]]></item>
+				<item id="title"><![CDATA[小云APP后台管理用户组]]></item>
+				<item id="description"><![CDATA[设置能在小云APP后台管理的用户组]]></item>
+				<item id="variable"><![CDATA[appbyme_allow_admin_usergroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+				</item>
+			</item>
+			<item id="61">
+				<item id="displayorder"><![CDATA[100]]></item>
+				<item id="title"><![CDATA[用户中心扩展积分显示项]]></item>
+				<item id="description"><![CDATA[设置能在客户端的用户中心显示的扩展积分项]]></item>
+				<item id="variable"><![CDATA[user_extcredit_show]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="62">
+				<item id="displayorder"><![CDATA[101]]></item>
+				<item id="title"><![CDATA[是否开启注册手机验证]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobcent_register_validation]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="63">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[是否开启登录手机验证]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobcent_login_validation]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="64">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[发帖必须绑定手机]]></item>
+				<item id="description"><![CDATA[开启之后 发帖必须绑定手机]]></item>
+				<item id="variable"><![CDATA[must_bind_thread]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="65">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[回帖必须绑定手机]]></item>
+				<item id="description"><![CDATA[开启之后回帖必须绑定手机]]></item>
+				<item id="variable"><![CDATA[must_bind_post]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="66">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[统一手机绑定表]]></item>
+				<item id="description"><![CDATA[如果统一了绑定表，那么登录/注册会查DZ的资料表。请确定DZ的资料表中的手机号来源一定正确！]]></item>
+				<item id="variable"><![CDATA[mobcent_sms_table]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="67">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[是否允许用户修改手机号]]></item>
+				<item id="description"><![CDATA[开启之后可在客户端修改手机号绑定]]></item>
+				<item id="variable"><![CDATA[mobcent_user_change_mobile]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="68">
+				<item id="displayorder"><![CDATA[103]]></item>
+				<item id="title"><![CDATA[短信接口]]></item>
+				<item id="description"><![CDATA[短信接口配置，云通讯、维信互亿、小云官方短信自助开发在这里设置。小云官方短信请前往app.xiaoyun.com购买。自助开发需要自己维护。Demo详见社区]]></item>
+				<item id="variable"><![CDATA[sms]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[0=云通讯
+1=维信互亿
+2=自助开发
+3=小云官方短信]]></item>
+			</item>
+			<item id="69">
+				<item id="displayorder"><![CDATA[104]]></item>
+				<item id="title"><![CDATA[云通讯账号下的ACCOUNTSID]]></item>
+				<item id="description"><![CDATA[对应的是云通讯开发者主账号下的ACCOUNT SID]]></item>
+				<item id="variable"><![CDATA[yun_accountsid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="70">
+				<item id="displayorder"><![CDATA[105]]></item>
+				<item id="title"><![CDATA[云通讯账号下的AUTH TOKEN]]></item>
+				<item id="description"><![CDATA[对应的是云通讯开发者主账号下的AUTH TOKEN]]></item>
+				<item id="variable"><![CDATA[yun_authtoken]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="71">
+				<item id="displayorder"><![CDATA[106]]></item>
+				<item id="title"><![CDATA[应用ID]]></item>
+				<item id="description"><![CDATA[对应的是云通讯应用列表中的应用管理中对应的:APP ID]]></item>
+				<item id="variable"><![CDATA[appbyme_appid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="72">
+				<item id="displayorder"><![CDATA[107]]></item>
+				<item id="title"><![CDATA[模板ID]]></item>
+				<item id="description"><![CDATA[对应的是云通讯开发者下面的模板ID]]></item>
+				<item id="variable"><![CDATA[yun_moduleid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="73">
+				<item id="displayorder"><![CDATA[108]]></item>
+				<item id="title"><![CDATA[维信互亿账号]]></item>
+				<item id="description"><![CDATA[维信互亿账号，注册维信互亿平台，不需要企业认证，可以充值300，请加QQ:2851577053，说安米用户即可]]></item>
+				<item id="variable"><![CDATA[hy_account]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="74">
+				<item id="displayorder"><![CDATA[109]]></item>
+				<item id="title"><![CDATA[维信互亿密码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hy_password]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="75">
+				<item id="displayorder"><![CDATA[110]]></item>
+				<item id="title"><![CDATA[短信模板]]></item>
+				<item id="description"><![CDATA[维信互亿模板，如果需要更换模板，请到维信互亿后台提交审核]]></item>
+				<item id="variable"><![CDATA[hy_template]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[您的验证码是：【变量】。请不要把验证码泄露给其他人。如非本人操作，可不用理会！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="76">
+				<item id="displayorder"><![CDATA[111]]></item>
+				<item id="title"><![CDATA[微下载地址]]></item>
+				<item id="description"><![CDATA[应用宝微下载地址，可在微信里面下载,申请地址:http://open.qq.com]]></item>
+				<item id="variable"><![CDATA[myapp_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="77">
+				<item id="displayorder"><![CDATA[112]]></item>
+				<item id="title"><![CDATA[是否打开邀请注册活动]]></item>
+				<item id="description"><![CDATA[开启了会在发现中显示]]></item>
+				<item id="variable"><![CDATA[appbyme_invite_activity]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="78">
+				<item id="displayorder"><![CDATA[113]]></item>
+				<item id="title"><![CDATA[邀请注册活动ID]]></item>
+				<item id="description"><![CDATA[邀请注册活动的ID，在app管理后台活动页面中查看]]></item>
+				<item id="variable"><![CDATA[invite_activity_id]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="79">
+				<item id="displayorder"><![CDATA[114]]></item>
+				<item id="title"><![CDATA[是否关闭邮箱注册]]></item>
+				<item id="description"><![CDATA[这个在客户端注册页面，不会显示邮箱，可以不填写邮箱就能注册成功]]></item>
+				<item id="variable"><![CDATA[close_email_register]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="80">
+				<item id="displayorder"><![CDATA[115]]></item>
+				<item id="title"><![CDATA[是否开启快速注册]]></item>
+				<item id="description"><![CDATA[这个在登陆页面会出现一个快速登陆的按钮，实现一键注册登陆]]></item>
+				<item id="variable"><![CDATA[fast_register]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="81">
+				<item id="displayorder"><![CDATA[118]]></item>
+				<item id="title"><![CDATA[快速注册默认用户组]]></item>
+				<item id="description"><![CDATA[设置后，快速注册的用户默认注册在设置的组里]]></item>
+				<item id="variable"><![CDATA[fast_register_group]]></item>
+				<item id="type"><![CDATA[group]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="82">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[是否开启实时聊天]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[gotye]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="83">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[外部wap更多按钮]]></item>
+				<item id="description"><![CDATA[如果选择否，那么外部WAP页面的右上角将不出现更多按钮]]></item>
+				<item id="variable"><![CDATA[topbar_more]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="84">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[是否使用H5帖子详情]]></item>
+				<item id="description"><![CDATA[打开之后 客户端将使用H5帖子详情，支持富文本]]></item>
+				<item id="variable"><![CDATA[h5_post]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="85">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[是否允许小视频]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isVideo]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="86">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[是否需要加好友才可聊天]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[imFriend]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="87">
+				<item id="displayorder"><![CDATA[127]]></item>
+				<item id="title"><![CDATA[是否开启图片验证码]]></item>
+				<item id="description"><![CDATA[开启后每次发送验证码都需要输入图片验证码
+若开启则老客户端将无法正常获取验证码]]></item>
+				<item id="variable"><![CDATA[mobile_allow_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="mobcent_tips_updatecache"><![CDATA[
+        <li>当客户端需要加快访问速度, 或者数据需要更新时, 您可以使用本功能重新生成缓存。更新缓存的时候，可能让服务器负载升高，请尽量避开会员访问的高峰时间</li>
+        <li>由于生成时给服务器的压力会特别大，生成缩略图的时候请一定要设置好数量(0为不更新), 还要选择好时间</li>
+    ]]></item>
+				<item id="mobcent_clean_datacache"><![CDATA[清理数据缓存]]></item>
+				<item id="mobcent_update_datacache"><![CDATA[更新数据缓存]]></item>
+				<item id="mobcent_clean_thumbcache"><![CDATA[清理缩略图缓存]]></item>
+				<item id="mobcent_thumb_task_length_setting"><![CDATA[设置缩略图任务数]]></item>
+				<item id="mobcent_thumb_task_length"><![CDATA[当前缩略图后台任务数]]></item>
+				<item id="mobcent_tips_portal_module_source"><![CDATA[
+        <li>版块id与文章栏目id不能同时存在, 只能二者选一</li>
+        <li>模块id为指的通过discuz页面diy产生的模块id</li>
+        <li>当 文章id/帖子id/模块id 与版块id/文章栏目id 都有存在时, 文章id/帖子id/模块id 会类似置顶的效果，排在 版块id/文章栏目id 数据前面</li>
+    ]]></item>
+				<item id="mobcent_tips_portal_module_source_add"><![CDATA[(可添加多个id,用`,`隔开)]]></item>
+				<item id="mobcent_tips_extcredit_base"><![CDATA[奖励基数, 客户端会在本来奖励的基础上乘以该数字, 请注意，你只能输入数字, 并且1代表0.01, 100代表1, 即该数会在设置的基础上乘以0.01]]></item>
+				<item id="mobcent_error_not_installed"><![CDATA[请先上传好小云APPdz转换接口包!!!]]></item>
+				<item id="mobcent_error_portal_not_allow"><![CDATA[请先打开启用门户模块配置项!!!]]></item>
+				<item id="mobcent_error_portal_module_param"><![CDATA[此项仅适用于在模块内容设置里的内容来源类别里面设置了版块id或者文章栏目id]]></item>
+				<item id="mobcent_error_time_invalid"><![CDATA[抱歉，您输入的时间格式不正确!]]></item>
+				<item id="mobcent_forum_style_setting"><![CDATA[版块显示样式设置]]></item>
+				<item id="mobcent_forum_column_style_col1"><![CDATA[单列显示]]></item>
+				<item id="mobcent_forum_column_style_col2"><![CDATA[双列显示]]></item>
+				<item id="mobcent_forum_edit_succeed"><![CDATA[论坛更新成功]]></item>
+				<item id="mobcent_portal_edit_succeed"><![CDATA[门户更新成功]]></item>
+				<item id="mobcent_seo_edit_succeed"><![CDATA[SEO更新成功]]></item>
+				<item id="mobcent_operation_sign_extcredit_base"><![CDATA[签到奖励基数设置]]></item>
+				<item id="mobcent_operation_forum_extcredit_base"><![CDATA[发回帖奖励基数设置]]></item>
+				<item id="mobcent_operation_edit_succeed"><![CDATA[运营更新成功]]></item>
+				<item id="mobcent_operation_setting"><![CDATA[运营设置]]></item>
+				<item id="mobcent_portal_module_setting"><![CDATA[门户模块设置]]></item>
+				<item id="mobcent_portal_module_id"><![CDATA[模块ID]]></item>
+				<item id="mobcent_portal_module_name"><![CDATA[模块名称(必填)]]></item>
+				<item id="mobcent_portal_module_source"><![CDATA[内容来源]]></item>
+				<item id="mobcent_portal_module_slider"><![CDATA[图片来源]]></item>
+				<item id="mobcent_portal_module_source_edit"><![CDATA[模块内容设置]]></item>
+				<item id="mobcent_portal_module_slider_edit"><![CDATA[幻灯片设置]]></item>
+				<item id="mobcent_portal_module_param_edit"><![CDATA[模块参数设置]]></item>
+				<item id="mobcent_portal_module_param_topic_digest"><![CDATA[精华主题选择,精华 I,精华 II,精华 III,普通主题]]></item>
+				<item id="mobcent_portal_module_param_topic_stick"><![CDATA[置顶主题选择,置顶 I,置顶 II,置顶 III,普通主题]]></item>
+				<item id="mobcent_portal_module_param_topic_special"><![CDATA[特殊主题选择,投票主题,商品主题,悬赏主题,活动主题,辩论主题,普通主题]]></item>
+				<item id="mobcent_portal_module_param_other_filter"><![CDATA[其他条件选择,好友(当前用户好友发的主题),关注(当前用户收听的用户发的主题),收藏(当前用户收藏的版块下的主题)]]></item>
+				<item id="mobcent_portal_module_param_topic_picrequired"><![CDATA[必须含图片附件]]></item>
+				<item id="mobcent_portal_module_param_topic_orderby"><![CDATA[主题排序方式,按最后回复时间倒序排序,按发布时间倒序排序,按回复数倒序排序,按浏览次数倒序排序,按热度倒序排序,按主题评价倒序排序,按距离近到远排序(只包括客户端主题)]]></item>
+				<item id="mobcent_portal_module_param_topic_postdateline"><![CDATA[主题发布时间]]></item>
+				<item id="mobcent_portal_module_param_topic_lastpost"><![CDATA[最后更新时间]]></item>
+				<item id="mobcent_portal_module_param_time"><![CDATA[不限制,1小时内,24小时内,7天内,1个月内]]></item>
+				<item id="mobcent_portal_module_param_style"><![CDATA[显示样式]]></item>
+				<item id="mobcent_portal_module_param_topic_style"><![CDATA[发帖时间,最后回复时间]]></item>
+				<item id="mobcent_portal_module_param_article_picrequired"><![CDATA[过滤无封面文章]]></item>
+				<item id="mobcent_portal_module_param_article_starttime"><![CDATA[发布时间-起始]]></item>
+				<item id="mobcent_portal_module_param_article_endtime"><![CDATA[发布时间-结束]]></item>
+				<item id="mobcent_portal_module_param_article_ordby"><![CDATA[文章排序方式,按发布时间倒序,按查看数倒序,按评论数倒序]]></item>
+				<item id="mobcent_portal_module_param_article_publishdateline"><![CDATA[文章发布时间]]></item>
+				<item id="mobcent_portal_module_source_type"><![CDATA[内容来源类别]]></item>
+				<item id="mobcent_portal_module_source_type_aid"><![CDATA[文章id]]></item>
+				<item id="mobcent_portal_module_source_type_tid"><![CDATA[帖子id]]></item>
+				<item id="mobcent_portal_module_source_type_fid"><![CDATA[版块id]]></item>
+				<item id="mobcent_portal_module_source_type_catid"><![CDATA[文章栏目id]]></item>
+				<item id="mobcent_portal_module_source_type_bid"><![CDATA[DIY模块id]]></item>
+				<item id="mobcent_portal_module_slider_type"><![CDATA[图片来源类别]]></item>
+				<item id="mobcent_portal_module_slider_title"><![CDATA[幻灯片标题]]></item>
+				<item id="mobcent_infomation_appbyme"><![CDATA[小云APPmobcent.zip转换接口包信息]]></item>
+				<item id="mobcent_version_user"><![CDATA[当前使用的转换接口包版本]]></item>
+				<item id="mobcent_version_appbyme"><![CDATA[小云APP最新转换接口包版本]]></item>
+				<item id="appbyme_seo_title_download"><![CDATA[下载页面]]></item>
+				<item id="mobcent_open_tips"><![CDATA[
+        <li>URL请以http://或者https://开头</li>
+        <li>帖子详情页中的帖子ID请用{tid}代替</li>
+    ]]></item>
+				<item id="mobcent_open_name"><![CDATA[开放管理]]></item>
+				<item id="mobcent_open_aboutus_open"><![CDATA[关于我们]]></item>
+				<item id="mobcent_open_aboutus_tips"><![CDATA[设置之后点击关于，会出现对应的页面]]></item>
+				<item id="mobcent_open_foundpw_open"><![CDATA[找回密码]]></item>
+				<item id="mobcent_open_foundpw_tips"><![CDATA[设置手机客户端找回密码网址，该值不为空时,客户端将采用此url来找回密码,如果想用本来的找回密码,请设为空]]></item>
+				<item id="mobcent_open_userinfo_open"><![CDATA[个人设置]]></item>
+				<item id="mobcent_open_userinfo_tips"><![CDATA[在个人中心点击头像会调转到指定的页面，而不是小云APP默认的个人设置]]></item>
+				<item id="mobcent_open_thread_0_name"><![CDATA[普通主题帖]]></item>
+				<item id="mobcent_open_thread_0_tips"><![CDATA[设置之后普通主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_1_name"><![CDATA[投票主题帖]]></item>
+				<item id="mobcent_open_thread_1_tips"><![CDATA[设置之后投票主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_2_name"><![CDATA[商品主题帖]]></item>
+				<item id="mobcent_open_thread_2_tips"><![CDATA[设置之后商品主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_3_name"><![CDATA[悬赏主题帖]]></item>
+				<item id="mobcent_open_thread_3_tips"><![CDATA[设置之后悬赏主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_4_name"><![CDATA[活动主题帖]]></item>
+				<item id="mobcent_open_thread_4_tips"><![CDATA[设置之后活动主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_5_name"><![CDATA[辩论主题帖]]></item>
+				<item id="mobcent_open_thread_5_tips"><![CDATA[设置之后辩论主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_open_thread_127_name"><![CDATA[插件相关主题帖]]></item>
+				<item id="mobcent_open_thread_127_tips"><![CDATA[设置之后插件相关主题帖都会跳到这个页面上]]></item>
+				<item id="mobcent_reg_tips"><![CDATA[        <li>您最多只能选择5个，如果超过5个将无法提交</li>
+				<li>是否启用请在DZ中的资料中设置</li>
+				<li>是否必填与编辑里的是否必填不会同步</li>]]></item>
+				<item id="mobcent_reg_only"><![CDATA[您最多只能选择5个]]></item>
+				<item id="mobcent_jump_tips"><![CDATA[
+				<li>填写微站地址的时候，请注意需要带http://，不需要带/m，否则会引起跳转失败</li>
+				<li>若没有写明，均为Discuz跳转微站</li>
+			]]></item>
+				<item id="mobcent_jump_name"><![CDATA[微站跳转管理]]></item>
+				<item id="mobcent_jump_wzurl_name"><![CDATA[微站地址]]></item>
+				<item id="mobcent_jump_wzurl_tips"><![CDATA[需要带http://，不需要带/m，否则会引起跳转失败]]></item>
+				<item id="mobcent_jump_inapp_name"><![CDATA[在客户端中是否跳转]]></item>
+				<item id="mobcent_jump_inapp_tips"><![CDATA[选择否之后，客户端内不跳转微站]]></item>
+				<item id="mobcent_jump_article_name"><![CDATA[文章跳转是否跳转微站]]></item>
+				<item id="mobcent_jump_article_tips"><![CDATA[打开之后，访问Discuz手机文章详情，会跳转对应的微站帖子详情]]></item>
+				<item id="mobcent_jump_forum_name"><![CDATA[帖子列表是否跳转微站]]></item>
+				<item id="mobcent_jump_forum_tips"><![CDATA[打开之后，访问Discuz手机帖子，会跳转对应的帖子列表页]]></item>
+				<item id="mobcent_jump_thread_name"><![CDATA[帖子跳转]]></item>
+				<item id="mobcent_jump_thread_-1"><![CDATA[都不跳转]]></item>
+				<item id="mobcent_jump_thread_0"><![CDATA[普通帖]]></item>
+				<item id="mobcent_jump_thread_1"><![CDATA[投票帖]]></item>
+				<item id="mobcent_jump_thread_2"><![CDATA[商品贴]]></item>
+				<item id="mobcent_jump_thread_3"><![CDATA[悬赏贴]]></item>
+				<item id="mobcent_jump_thread_4"><![CDATA[活动贴]]></item>
+				<item id="mobcent_jump_thread_5"><![CDATA[辩论帖]]></item>
+				<item id="mobcent_jump_thread_127"><![CDATA[插件帖]]></item>
+				<item id="mobcent_jump_thread_tips"><![CDATA[按住Ctrl多选<br /> 若选择了都不跳转，那么所有帖子均不跳转。哪些帖子允许跳转微站]]></item>
+				<item id="mobcent_jump_user_name"><![CDATA[用户中心跳转微站]]></item>
+				<item id="mobcent_jump_user_tips"><![CDATA[选择是之后，访问Discuz手机用户中心，会跳转对应的微站用户中心]]></item>
+				<item id="mobcent_jump_plugin_name"><![CDATA[插件跳转微站]]></item>
+				<item id="mobcent_jump_plugin_tips"><![CDATA[选择是之后，访问Discuz插件，会跳转微站首页]]></item>
+				<item id="mobcent_jump_all_name"><![CDATA[全局跳转]]></item>
+				<item id="mobcent_jump_all_tips"><![CDATA[开启之后，非以上页面将会跳转微站首页]]></item>
+				<item id="mobcent_jump_wzjump_name"><![CDATA[pc访问微站帖子详情是否跳转pc]]></item>
+				<item id="mobcent_jump_wzjump_tips"><![CDATA[开启之后，用pc访问微站详情时，会直接跳转pc详情]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appbyme_qrcode_install"><![CDATA[扫描二维码安装]]></item>
+				<item id="appbyme_android_install"><![CDATA[安卓版下载]]></item>
+				<item id="appbyme_apple_install"><![CDATA[iPhone版下载]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+	</item>
+</root>

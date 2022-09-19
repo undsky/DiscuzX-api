@@ -1,0 +1,348 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title> JS接口2.2 </title>
+ </head>
+<script type="text/javascript" src="appbyme.js"></script>
+<body>
+<div>判断是否是安米浏览器</div>    
+<div><input type="button" onClick=appbymeWeb() value="安米浏览器" /></div>
+<div>登陆用户 1.x</div>
+<div><input type="button" onClick=onLogin() value="登陆" /></div>
+<div>注销用户 1.x</div>
+<div><input type="button" onClick=onLogout() value="注销" /></div>
+<div>分享 1.x</div>
+<div><input type="button" onClick=onShare('测试客户端分享','分享内容','http://www.sina.com.cn?a=b&bc=d') value="分享" /></div>
+<div>获取用户信息1.x</div>
+<div><input type="button" onClick=getUserInfo() value="获取用户信息" /></div>
+<div>初始化摇一摇组件1.x</div>
+<input type="button" onClick=initShake(3000) value="初始化" />
+<div>-----------------------------</div>
+<div>登陆用户 2.0</div>
+<div><input type="button" onClick=login() value="登陆" /></div>
+<div>注销用户 2.0</div>
+<div><input type="button" onClick=logout() value="注销" /></div>
+<div>分享 2.0</div>
+<div><input type="button" onClick=share() value="分享" /></div>
+<div>获取用户信息2.0</div>
+<div><input type="button" onClick=userInfo() value="获取用户信息" /></div>
+<div>打开用户中心2.0</div>
+<div><input type="button" onClick=userCenter() value="用户中心" /></div>
+<div>发表帖子2.0</div>
+<div><input type="button" onClick=pulishTopic() value="发表" /></div>
+<div>评论帖子2.0</div>
+<div><input type="button" onClick=replyTopic() value="评论" /></div>
+<div>打开帖子详情2.0</div>
+<div><input type="button" onClick=topicDetail() value="帖子详情" /></div>
+<div>打开二维码扫描2.0</div>
+<div><input type="button" onClick=scan() value="扫描" /></div>
+<div>打开安米web浏览器2.0</div>
+<div><input type="button" onClick=urlRequest() value="浏览器" /></div>
+<div>打开大图浏览器2.0</div>
+<div><input type="button" onClick=imagePreview() value="查看大图" /></div>
+<div>获取版本号2.0</div>
+<div><input type="button" onClick=getVersion() value="版本号" /></div>
+<div>自定义topbar右侧更多按钮2.0</div>
+<div><input type="button" onClick=customButton() value="自定义更多" /></div>
+<div>加密方法2.1</div>
+<div><input type="button" onClick=encrypt('aaaaaaaa') value="加密" /></div>
+<div>获取定位2.1</div>
+<div><input type="button" onClick=getLocation() value="定位" /></div>
+<div>关闭当前页面2.1</div>
+<div><input type="button" onClick=closeActivity() value="关闭" /></div>
+<div>微信支付2.2</div>
+<div><input type="button" onClick=payWechat() value="微信支付" /></div>
+<div>打开自定义模块页面</div>
+<div><input type="button" onClick=customModule() value="打开模块" /></div>
+
+<div id="div" style="width:200;height:200"></div>
+<script type="text/javascript">
+
+//userinfo用户中心 search查询  sign签到  scan二维码扫描  fasttext快发文字 fastimage快发图片 fastcamera快发拍照 fastaudio快发语音 webapp
+
+var TOPBAR_USERINFO = 'userinfo';
+var TOPBAR_SEARCH = 'search';
+var TOPBAR_SIGN = 'sign';
+var TOPBAR_SCAN = 'scan';
+var TOPBAR_FASTTEXT = 'fasttext';
+var TOPBAR_FASTIMAGE = 'fastimage';
+var TOPBAR_FASTCAMERA = 'fastcamera';
+var TOPBAR_FASTAUDIO = 'fastaudio';
+var TOPBAR_WEBAPP = 'webapp';
+var TOPBAR_REFRESH = 'refresh';
+
+var TOPBAR_MORE_BROWSER = 'browser';
+var TOPBAR_MORE_COPY = 'copy';
+var TOPBAR_MORE_SHARE = 'share';
+
+
+//说明：1、如果以新客户端作为起点，可以不用考虑1.x的接口，直接使用2.0接口（不兼容旧客户端）；
+//     2、如果要兼容旧客户端，（登陆、注销、分享、获取用户信息）请使用1.x接口；
+//     3、2.0接口除1.x功能外还增加了（打开用户中心、发表、回复、帖子详情、二维码、打开web页面、查看大图，修改WEB顶部导航栏按钮、应用版本）；
+
+
+
+//要想使用2.0，首先调用初始化方法（必须）
+connectAppbymeJavascriptBridge(function(bridge){
+                               
+    alert('connectAppbymeJavascriptBridge init');
+    //进入此回调说明是安米浏览器，也可以通过appbymeWeb()来判断是否是安米浏览器；
+                               
+    //初始化摇一摇，此方式不兼容1.0接口
+    bridge.initShake(3000,function(){
+        alert('2.0 摇动了');
+    });
+      
+    //如果想让顶部导航的分享可以回调请在此处定义回调方法
+    bridge.setShareCallBack(function(data){
+        alert(data.errInfo);
+    });
+                               
+    //如果想让顶部当好的二维码扫描可以回调请在此处定义回调方法
+    bridge.setScanCallBack(function(data){
+        alert(data.errInfo + ' ' +data.url);
+    });
+    
+});
+
+//判断是否是安米浏览器
+function appbymeWeb(){
+    if(navigator.userAgent.indexOf('Appbyme') > -1){
+        alert("安米浏览器");
+    }else{
+        alert("不是安米浏览器");
+    }
+}
+
+// 登陆和获取用户信息增加5个字段  userName:用户名称 userAvator:用户头像 userSex:用户性别 userScore:用户积分 userGold:用户金币
+
+function login(){
+    //登陆
+    AppbymeJavascriptBridge.login(function(data){
+        alert(JSON.stringify(data));
+    });
+}
+
+function userInfo(){
+    //获取用户信息
+    AppbymeJavascriptBridge.getUserInfo(function(data){
+        alert(JSON.stringify(data));
+    });
+}
+
+
+function logout(){
+    //注销
+    AppbymeJavascriptBridge.logout(function(data){
+    });
+}
+
+
+function share(){
+    //分享
+    AppbymeJavascriptBridge.share("测试客户端分享", "分享内容", "http://www.sina.com.cn?a=b&bc=d", function(data){
+        alert(data.errInfo);
+    });
+}
+
+
+
+function userCenter(){
+    //用户中心 userCenter(userId)
+    AppbymeJavascriptBridge.userCenter(36);
+                                        
+}
+
+function pulishTopic(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    AppbymeJavascriptBridge.pulishTopic(function(data){
+        alert(data.errInfo);
+    },1,61,'1',1);
+}
+
+function replyTopic(){
+
+    //回复帖子 replyTopic(callBack,topicId,referenceTopicId,boradId)
+    AppbymeJavascriptBridge.replyTopic(function(data){
+        alert(data.errInfo);
+    },529,36,61);
+}
+
+
+function topicDetail(){
+    //type 1:帖子 2文章
+    //帖子详情 topicDetail(topicId,boardId,type)
+    AppbymeJavascriptBridge.topicDetail(529,22,1);
+}
+
+function scan(){
+    //扫描二维码
+    AppbymeJavascriptBridge.scan(function(data){
+        alert(data.errInfo + ' ' +data.url);
+    });
+}
+
+function urlRequest(){
+    //打开新的web组件 urlRequest(url)
+    AppbymeJavascriptBridge.urlRequest('http://www.baidu.com');
+}
+
+function imagePreview(){
+    var imageArray=['http://pic15.nipic.com/20110720/7434631_111124480000_2.jpg','http://www.fansimg.com/uploads2010/10/userid219491time20101013060759.jpg','http://pica.nipic.com/2007-11-15/2007111510424972_2.jpg'];
+
+    //查看大图 imagePreview(imageArray, position);
+    AppbymeJavascriptBridge.imagePreview(imageArray,1);
+}
+
+function getVersion(){
+    //获取应用版本信息
+    AppbymeJavascriptBridge.getVersion(function(data){
+        alert(JSON.stringify(data));
+    });
+}
+
+function customButton(){
+
+    //前面name，后面value
+    var moreArray = ['web1','http://www.baidu.com','web2','http://www.sina.com','分享','share','二维码','scan','浏览器打开','browser','复制','copy']
+    
+    var json ={
+        more:[//右侧数第一个位置，与button1二选一
+              {
+                name:'web1',
+                value:'http://www.baidu.com'
+              },
+              {
+                name:'web2',
+                value:'http://www.sina.com'
+              },
+              {
+                name:'分享',
+                value:TOPBAR_MORE_SHARE
+              },
+              {
+                name:'二维码',
+                value:TOPBAR_SCAN
+              },
+              {
+                name:'浏览器打开',
+                value:TOPBAR_MORE_BROWSER
+              },
+              {
+                name:'复制',
+                value:TOPBAR_MORE_COPY
+              }
+        ],
+        button1:{//右侧数第一个位置，与more二选一
+            title:'测试',
+            type:TOPBAR_SCAN,
+            url:'http://www.sian.com.cn'
+        },
+        button2:{//右侧数第二个位置
+            type:TOPBAR_FASTIMAGE,
+            boardId:61,
+            boardName:'浮花浪蕊',
+            isTitle:true
+        }
+    }
+    
+    //自定义顶部导航按钮 customButton(json)
+    AppbymeJavascriptBridge.customButton(JSON.stringify(json));
+}
+
+function encrypt(str){
+    AppbymeJavascriptBridge.encrypt(function(data){
+        alert(JSON.stringify(data));
+    },str);
+}
+
+function getLocation(){
+    AppbymeJavascriptBridge.getLocation(function(data){
+        alert(JSON.stringify(data));
+    });
+}
+
+function closeActivity(){
+    AppbymeJavascriptBridge.closeActivity();
+}
+
+//payRequest(callBack, payType, payParam)
+//payType 1:微信支付
+function payWechat(){
+    //参数必须正确才能正常使用支付功能，请详见微信支付官方文档
+    var payParam ={
+        appid:'wxb4ba3c02aa476ea1',
+        partnerid:'10000100',
+        prepayid:'wx201510231559061d182b8f4a0880414770',
+        attach:'Sign=WXPay',//扩展字段
+        noncestr:'397fb66686fa7d6be8c564a85131387e',
+        timestamp:'1445587146',
+        sign:'7D874C02D58F6C49ED271230BEBCAE9B'
+    };
+    
+    AppbymeJavascriptBridge.payRequest(function(data){
+        //回调  type:支付平台  1：微信
+        alert(JSON.stringify(data));
+    },1,JSON.stringify(payParam));
+}
+
+//customModule(moduleId)
+function customModule(){
+    AppbymeJavascriptBridge.customModule(8);
+}
+
+
+//////////////////////以下是1.x接口及回调方法/////////////////////
+
+/**
+result为JSON对象；
+result = {
+    errmsg:”OK”,  //OK:登陆或获取用户信息成功  LOGOUT_OK:退出成功  无失败情况  SHARE_OK:分享成功  SHARE_FAIL分享失败或取消分享
+    errInfo:"登陆成功",
+    userId:1,     //用户ID
+    device:“xxxx”,  //设备IMEI
+    lng:”11”,       //经纬度
+    lat:”11”,       //经纬度   
+    os:”iphone6p"   //手机型号
+    sharePlat:"QQ"   //QQ,QZONE,WECHAT,MOMENTS,WEIBO,SHARE_SDK(一键分享)
+    userName:''用户名称(需升级客户端)
+    userAvator：0 用户头像(需升级客户端)
+    userSex 用户性别(需升级客户端)
+    userScore 用户积分(需升级客户端)
+    userGold 用户金币(需升级客户端)
+    
+ }
+*/
+//1.x 的回调方法
+function appbymeCallBack(result){
+    alert(JSON.stringify(result))
+    if(result.errmsg == "OK"){
+        //登陆成功或是获取用户信息成功
+    }
+    if(result.errmsg == "LOGOUT_OK"){
+        //注销成功
+    }
+    if(result.errmsg == "SHARE_OK"){
+        //分享成功
+    }
+    if(result.errmsg == "SHARE_FAIL"){
+        //分享失败
+    }
+}
+
+//1.x摇一摇的回调
+function shakeCallBack(){
+    //需要用户基本信息可以使用getUserInfo
+    alert("1.0 摇动了");
+}
+
+
+</script>
+ </body>
+</html>

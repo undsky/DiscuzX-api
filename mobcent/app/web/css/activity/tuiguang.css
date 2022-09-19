@@ -1,0 +1,107 @@
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group input[type=text] {
+    width: 225px;
+    font-size: 12px;
+}
+
+.form-group input[type=file] {
+    width: 225px;
+    font-size: 12px;
+}
+
+.form-group select {
+    width: 225px;
+    font-size: 12px;
+}
+
+.form-group textarea {
+    width: 225px;
+    font-size: 12px;
+}
+
+.form-group input[type=number] {
+    width: 225px;
+}
+
+.form-group label {
+    padding-right: 0px;
+}
+
+label {
+    font-weight: 100;
+}
+
+/* 邀请注册管理 */
+.activ-list {
+    /*width: 500px;*/
+    height: 430px;
+    /*background:#e3e3e3;*/
+    margin: 0px 0px 0px 10px;
+}
+
+.activ {
+    width: 100px;
+    height: 100px;
+    /*background: green;*/
+    float: left;
+}
+
+.activ img {
+    width: 70px;
+    height: 70px;
+}
+
+.reward-edit {
+    font-size: 12px;
+}
+
+/* 翻页部分(Copy From DZ)*/
+.pg {
+    float: right;
+}
+
+.pg, .pgb {
+    line-height: 26px;
+}
+
+.pg a, .pg strong, .pgb a, .pg label {
+    float: left;
+    display: inline;
+    margin-left: 4px;
+    padding: 0 8px;
+    height: 26px;
+    border: 1px solid;
+    border-color: #C2D5E3;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    color: #333;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.pg a.nxt, .pgb a {
+    padding: 0 10px;
+}
+
+.pg a:hover, .pgb a:hover {
+    border-color: #369;
+    color: #369;
+}
+
+.pg a.nxt {
+    padding-right: 25px;
+    background-image: url(../..//images/admin/arw_r.gif);
+    background-position: 90% 50%;
+}
+
+.pg a.prev {
+    background-image: url(../../images/admin/arw_l.gif);
+    background-position: 50% 50%;
+}
+
+.pg strong {
+    background-color: #E5EDF2;
+}

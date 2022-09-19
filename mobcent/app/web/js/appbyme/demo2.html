@@ -1,0 +1,370 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title> JS接口2.0 </title>
+</head>
+<script type="text/javascript" src="sq-2.3.js"></script>
+<body>
+<div>登陆用户 2.0</div>
+<div><input type="button" onClick=login() value="登陆" /></div>
+<div>注销用户 2.0</div>
+<div><input type="button" onClick=logout() value="注销" /></div>
+<div>分享 2.0</div>
+<div><input type="button" onClick=share() value="分享" /></div>
+<div>获取用户信息2.0</div>
+<div><input type="button" onClick=userInfo() value="获取用户信息" /></div>
+<div>打开用户中心2.0</div>
+<div><input type="button" onClick=userCenter() value="用户中心" /></div>
+<div>发表帖子2.0 普通帖不带标题 浮花浪蕊</div>
+<div><input type="button" onClick=pulishTopic() value="发表" /></div>
+<div>发表帖子2.0 分类帖带标题 紫玉成烟 开心分类</div>
+<div><input type="button" onClick=pulishTopic2() value="发表" /></div>
+<div>发表帖子2.0 投票帖有标题 浮花浪蕊</div>
+<div><input type="button" onClick=pulishTopic3() value="发表" /></div>
+<div>评论帖子2.0 回复帖子 测试JS回帖</div>
+<div><input type="button" onClick=replyTopic() value="评论" /></div>
+<div>评论帖子2.0 引用回复帖子 测试JS回帖</div>
+<div><input type="button" onClick=replyTopic2() value="评论" /></div>
+<div>打开帖子详情2.0 测试JS回帖</div>
+<div><input type="button" onClick=topicDetail() value="帖子详情" /></div>
+<div>打开帖子详情2.0 一二三四五楼</div>
+<div><input type="button" onClick=topicDetail2() value="文章详情" /></div>
+<div>打开二维码扫描2.0</div>
+<div><input type="button" onClick=scan() value="扫描" /></div>
+<div>打开安米web浏览器2.0</div>
+<div><input type="button" onClick=urlRequest() value="浏览器" /></div>
+<div>打开大图浏览器2.0</div>
+<div><input type="button" onClick=imagePreview() value="查看大图" /></div>
+<div>获取版本号2.0</div>
+<div><input type="button" onClick=getVersion() value="版本号" /></div>
+<div>自定义topbar按钮2.0  扫码+更多</div>
+<div><input type="button" onClick=customButton() value="自定义更多" /></div>
+<div>自定义topbar按钮2.0  发表文字+搜索</div>
+<div><input type="button" onClick=customButton2() value="自定义更多" /></div>
+<div>加密方法</div>
+<div><input type="button" onClick=encrypt('aaaaaaaa') value="加密" /></div>
+<div>定位</div>
+<div><input type="button" onClick=getLocation() value="定位" /></div>
+<div>关闭当前页面</div>
+<div><input type="button" onClick=closeActivity() value="关闭" /></div>
+<div>微信支付</div>
+<div><input type="button" onClick=payWechat() value="微信支付" /></div>
+<div>打开自定义模块页面</div>
+<div><input type="button" onClick=customModule() value="打开模块" /></div>
+<div>授权</div>
+<div><input type="button" onClick=customModule() value="授权" /></div>
+
+<div id="div" style="width:200;height:200"></div>
+<script type="text/javascript">
+
+//userinfo用户中心 search查询  sign签到  scan二维码扫描  fasttext快发文字 fastimage快发图片 fastcamera快发拍照 fastaudio快发语音 share分享
+
+
+//首先调用初始化方法（必须）
+connectSQJavascriptBridge(function(){
+    alert('小云社群浏览器');
+    
+    //初始化摇一摇，此方式不兼容1.0接口
+    sq.initShake(3000,function(){
+        alert('2.0 摇动了');
+    });
+    
+    //如果想让顶部导航的分享可以回调请在此处定义回调方法
+    sq.setShareCallBack(function(data){
+        alert(data.errInfo);
+    });
+                               
+    //如果想让顶部当好的二维码扫描可以回调请在此处定义回调方法
+    sq.setScanCallBack(function(data){
+        alert(data.errInfo + ' ' +data.url);
+    });
+                               
+});
+
+
+
+// 登陆和获取用户信息增加5个字段  userName:用户名称 userAvator:用户头像 userSex:用户性别 userScore:用户积分 userGold:用户金币
+
+//userId、userName、userAvator、userSex、userScore、userGold、device、lng、lat、os、errmsg、errInfo
+
+function login(){
+    //登陆
+    sq.login(function(userInfo){
+        //userId 用户id
+        //userName 用户名称
+        //userAvator 用户头像
+        //userSex 用户性别
+        //userScore 用户积分
+        //userGold 用户金币
+        //device 设备号
+        //lng 经度
+        //lat 纬度
+        //os 操作系统
+        //errmsg 回值状态  OK/FAIL
+        //errInfo 回值提示
+        alert(JSON.stringify(userInfo));
+    });
+}
+
+function userInfo(){
+    //获取用户信息
+    AppbymeJavascriptBridge.getUserInfo(function(userInfo){
+        alert(JSON.stringify(userInfo));
+    });
+}
+
+
+function logout(){
+    //注销
+    sq.logout(function(info){
+         alert(JSON.stringify(info));
+    });
+}
+
+
+function share(){
+    //分享
+    sq.share("分享标题", "分享内容", "分享URL", function(result){
+             //userId 用户id
+             //device 设备
+             //lng 经度
+             //lat 纬度
+             //os 操作系统
+             //sharePlat 分享平台  WECHAT/MOMENTS/QZONE/QQ/WEIBO
+        alert(result.errInfo);
+    });
+}
+
+
+
+function userCenter(){
+    //用户中心 userCenter(userId)
+    sq.userCenter(36);
+                                        
+}
+
+//普通帖不带标题 浮花浪蕊
+function pulishTopic(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+        alert(result.errInfo);
+    },1,61,'浮花浪蕊',1,false);
+}
+
+//分类帖带标题 紫玉成烟 开心分类
+function pulishTopic2(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+                                        alert(result.errInfo);
+                                        },2,50,'紫玉成烟',1,true);
+}
+
+//投票帖有标题 浮花浪蕊
+function pulishTopic3(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+                                        alert(result.errInfo);
+                                        },3,61,'浮花浪蕊');
+}
+
+//回复帖子 测试JS回帖
+function replyTopic(){
+
+    //回复帖子 replyTopic(callBack,topicId,referenceTopicId,boradId)
+    sq.replyTopic(function(result){
+        alert(result.errInfo);
+    },542,0,61);
+}
+
+//引用回复帖子 测试JS回帖
+function replyTopic2(){
+    
+    //回复帖子 replyTopic(callBack,topicId,referenceTopicId,boradId)
+    sq.replyTopic(function(result){
+                                       alert(result.errInfo);
+                                       },542,36,61);
+}
+
+//帖子详情 测试JS回帖
+function topicDetail(){
+    //type 1:帖子 2文章
+    //帖子详情 topicDetail(topicId,boardId,type)
+    sq.topicDetail(542,61,1);
+}
+
+//文章详情 一二三四五楼
+function topicDetail2(){
+    //type 1:帖子 2文章
+    //帖子详情 topicDetail(topicId,boardId,type)
+    sq.topicDetail(1,0,2);
+}
+
+function scan(){
+    //扫描二维码
+    sq.scan(function(result){
+        alert(result.errInfo + ' ' +result.url);
+    });
+}
+
+function urlRequest(){
+    //打开新的web组件 urlRequest(url)
+    sq.urlRequest('http://www.baidu.com');
+}
+
+function imagePreview(){
+    var imageArray=['http://pic15.nipic.com/20110720/7434631_111124480000_2.jpg','http://www.fansimg.com/uploads2010/10/userid219491time20101013060759.jpg','http://pica.nipic.com/2007-11-15/2007111510424972_2.jpg'];
+
+    //查看大图 imagePreview(imageArray, position);
+    sq.imagePreview(imageArray,1);
+}
+
+function getVersion(){
+    //version
+    //build
+    //platform
+    //js
+    //获取应用版本信息
+    sq.getVersion(function(result){
+        alert(JSON.stringify(result));
+    });
+}
+
+//自定义浏览器顶部导航功能
+function customButton(){
+
+//TOPBAR_USERINFO 用户中心;
+//TOPBAR_SEARCH 搜索;
+//TOPBAR_SIGN 签到;
+//TOPBAR_SCAN 扫一扫;
+//TOPBAR_FASTTEXT 快速文本发表;
+//TOPBAR_FASTIMAGE 快速图片发表;
+//TOPBAR_FASTCAMERA 拍照发表;
+//TOPBAR_FASTAUDIO 语音发表;
+//TOPBAR_WEBAPP webapp;
+//TOPBAR_REFRESH 刷新;
+//TOPBAR_COPY 复制链接;
+//TOPBAR_SHARE 分享;
+
+    //前面name，后面value
+    var moreArray = ['web1','http://www.baidu.com','web2','http://www.sina.com','分享',TOPBAR_SHARE,'二维码',TOPBAR_SCAN,'复制',TOPBAR_COPY]
+    //json对象中，
+    //more功能绘制在顶部导航的右侧数第一个位置
+    //button1功能绘制在顶部导航的右侧数第一个位置
+    //button2功能绘制在顶部导航的右侧数第二个位置
+    var json ={
+        more:[
+              {
+                name:'web1',
+                value:'http://www.baidu.com'
+              },
+              {
+                name:'web2',
+                value:'http://www.sina.com'
+              },
+              {
+                name:'分享',
+                value:TOPBAR_SHARE
+              },
+              {
+                name:'二维码',
+                value:TOPBAR_SCAN
+              },
+              {
+                name:'复制',
+                value:TOPBAR_COPY
+              },
+              {
+                name:'刷新',
+                value:TOPBAR_REFRESH
+              }
+        ],
+        button2:{//右侧数第二个位置
+            type:TOPBAR_SCAN
+        }
+    }
+    
+    //自定义顶部导航按钮 customButton(json)
+    sq.customButton(JSON.stringify(json));
+}
+
+function customButton2(){
+    
+    //前面name，后面value
+    var json ={
+              button1:{//右侧数第一个位置，与more二选一
+                  title:'测试',
+                  type:TOPBAR_REFRESH
+              },
+              button2:{//右侧数第二个位置
+                  type:TOPBAR_FASTIMAGE,
+                  boardId:61,
+                  boardName:'浮花浪蕊',
+                  isTitle:true
+              }
+    }
+    //自定义顶部导航按钮 customButton(json)
+    sq.customButton(JSON.stringify(json));
+}
+
+function encrypt(str){
+    sq.encrypt(function(result){
+        //encrypt
+        //source
+        alert(JSON.stringify(result));
+    },'aaaaa');
+    
+}
+
+function getLocation(){
+    sq.getLocation(function(result){
+        alert(JSON.stringify(result));
+    });
+}
+
+function closeActivity(){
+    sq.closeActivity();
+}
+
+//payRequest(callBack, payType, payParam)
+//payType 1:微信支付
+function payWechat(){
+    var payParam ={
+        appid:'wxb4ba3c02aa476ea1',
+        partnerid:'10000100',
+        prepayid:'wx201510231559061d182b8f4a0880414770',
+        attach:'Sign=WXPay',//package扩展字段
+        noncestr:'397fb66686fa7d6be8c564a85131387e',
+        timestamp:'1445587146',
+        sign:'7D874C02D58F6C49ED271230BEBCAE9B'
+    };
+    
+    sq.payRequest(function(result){
+        //回调  type:支付平台  1：微信
+        alert(JSON.stringify(result));
+    },1,JSON.stringify(payParam));
+}
+
+//customModule(moduleId)
+function customModule(){
+    sq.customModule(1);
+}
+
+
+
+
+
+
+
+
+
+</script>
+ </body>
+</html>

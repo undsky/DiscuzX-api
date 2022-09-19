@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title> JS接口3.0 </title>
+</head>
+<script type="text/javascript" src="sq-3.0.0.js"></script>
+<body>
+
+<div>－－js 2.0 接口 －－</div>
+
+<div><input type="button" onClick=login() value="登陆用户"/></div></br>
+<div><input type="button" onClick=logout() value="注销用户"/></div></br>
+<div><input type="button" onClick=share() value="分享"/></div></br>
+<div><input type="button" onClick=userInfo() value="获取用户信息"/></div></br>
+<div><input type="button" onClick=userCenter() value="打开用户中心"/></div></br>
+<div><input type="button" onClick=pulishTopic() value="发表帖子 普通帖不带标题 浮花浪蕊"/></div></br>
+<div><input type="button" onClick=pulishTopic2() value="发表帖子 分类帖带标题 紫玉成烟 开心分类"/></div></br>
+<div><input type="button" onClick=pulishTopic3() value="发表帖子 投票帖有标题 浮花浪蕊"/></div></br>
+<div><input type="button" onClick=replyTopic() value="评论帖子 回复帖子 测试JS回帖"/></div></br>
+<div><input type="button" onClick=replyTopic2() value="评论帖子 引用回复帖子 测试JS回帖"/></div></br>
+<div><input type="button" onClick=topicDetail() value="打开帖子详情 测试JS回帖"/></div></br>
+<div><input type="button" onClick=topicDetail2() value="打开帖子详情 一二三四五楼"/></div></br>
+<div><input type="button" onClick=scan() value="打开扫描二维码"/></div></br>
+<div><input type="button" onClick=urlRequest() value="打开小云浏览器"/></div></br>
+<div><input type="button" onClick=imagePreview() value="查看大图"/></div></br>
+<div><input type="button" onClick=getVersion() value="获取版本号"/></div></br>
+<div><input type="button" onClick=customButton() value="自定义导航栏"/></div></br>
+<div><input style="text-decoration:line-through" type="button" onClick=encrypt('aaaaaaaa') value="加密方法"/></div></br>
+<div><input type="button" onClick=getLocation() value="定位"/></div></br>
+<div><input type="button" onClick=closeActivity() value="关闭当前页面"/></div></br>
+<div><input type="button" onClick=payWechat() value="微信支付"/></div></br>
+<div><input type="button" onClick=customModule() value="打开模块"/></div></br>
+<br/>
+<br/>
+<div>－－js 3.0 接口 －－</div>
+<input type="button" value="帖子回复" onclick="return showReply();"/><br/><br/>
+<input type="button" value="文章回复" onclick="return showActicleReply();"/><br/><br/>
+<div id="result"></div>
+<input type="button" value="查看大图" onclick="return previewImage();"/><br/><br/>
+
+<input type="button" value="分享－支持独立平台分享" onclick="return share2();"/><br/><br/>
+
+<input type="button" value="获取app支持的分享平台" onclick="return shareTypes();"/><br/><br/>
+
+<input type="button" value="打开话题列表" onclick="return startTalkTopic();"/><br/><br/>
+
+<input type="button" value="私信聊天" onclick="return startChat();"/><br/><br/>
+
+<input type="button" value="图片上传" onclick="return startPhotoUpload();"/><br/><br/>
+
+<input type="button" value="提示框" onclick="return toast('你好',false);"/><br/><br/>
+
+<input type="button" value="发表帖子3.0 普通帖不带标题" onClick="return publish();"/><br/><br/>
+
+<input type="button" value="发表帖子3.0 普通帖带标题 浮花浪蕊" onClick="return publish2();"/><br/><br/>
+
+<input type="button" value="发表帖子3.0 普通帖带标题 紫玉成烟 开心分类" onClick="return publish3();"/><br/><br/>
+
+<input type="button" value="发表帖子3.0 话题内发帖" onClick="return publish4();"/><br/><br/>
+
+<a href="tel:123456789">拨号</a><br/><br/>
+
+<a href="sms:123456789?body=你好">短信</a>
+
+</body>
+<div id="div" style="width:200;height:200"></div>
+<script type="text/javascript">
+
+//userinfo用户中心 search查询  sign签到  scan二维码扫描  fasttext快发文字 fastimage快发图片 fastcamera快发拍照 fastaudio快发语音 share分享
+
+
+//首先调用初始化方法（必须）
+connectSQJavascriptBridge(function(){
+    alert('小云社群浏览器');
+    
+    //初始化摇一摇，此方式不兼容1.0接口
+    sq.initShake(3000,function(){
+        alert('2.0 摇动了');
+    });
+    
+    //如果想让顶部导航的分享可以回调请在此处定义回调方法
+    sq.setShareCallBack(function(data){
+        alert(data.errInfo);
+    });
+                               
+    //如果想让顶部当好的二维码扫描可以回调请在此处定义回调方法
+    sq.setScanCallBack(function(data){
+        alert(data.errInfo + ' ' +data.url);
+    });
+
+});
+
+
+
+// 登陆和获取用户信息增加5个字段  userName:用户名称 userAvator:用户头像 userSex:用户性别 userScore:用户积分 userGold:用户金币
+
+//userId、userName、userAvator、userSex、userScore、userGold、device、lng、lat、os、errmsg、errInfo
+
+function login(){
+    //登陆
+    sq.login(function(userInfo){
+        //userId 用户id
+        //userName 用户名称
+        //userAvator 用户头像
+        //userSex 用户性别
+        //userScore 用户积分
+        //userGold 用户金币
+        //device 设备号
+        //lng 经度
+        //lat 纬度
+        //os 操作系统
+        //errmsg 回值状态  OK/FAIL
+        //errInfo 回值提示
+        alert(JSON.stringify(userInfo));
+    });
+}
+
+function userInfo(){
+    //获取用户信息
+    AppbymeJavascriptBridge.getUserInfo(function(userInfo){
+        alert(JSON.stringify(userInfo));
+    });
+}
+
+
+function logout(){
+    //注销
+    sq.logout(function(info){
+         alert(JSON.stringify(info));
+    });
+}
+
+
+function share(){
+    //分享
+    sq.share("分享标题", "分享内容", "http://www.baidu.com", function(result){
+             //userId 用户id
+             //device 设备
+             //lng 经度
+             //lat 纬度
+             //os 操作系统
+             //sharePlat 分享平台  WECHAT/MOMENTS/QZONE/QQ/WEIBO
+        alert(result.errInfo);
+    });
+}
+
+
+
+function userCenter(){
+    //用户中心 userCenter(userId)
+    sq.userCenter(36);
+                                        
+}
+
+//普通帖不带标题 浮花浪蕊
+function pulishTopic(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+        alert(result.errInfo);
+    },1,61,'浮花浪蕊',1,false);
+}
+
+//分类帖带标题 紫玉成烟 开心分类
+function pulishTopic2(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+                                        alert(result.errInfo);
+                                        },2,50,'紫玉成烟',1,true);
+}
+
+//投票帖有标题 浮花浪蕊
+function pulishTopic3(){
+    //topicType 1:普通贴 2:分类贴 3:投票贴
+    //发表帖子 pulishTopic(callBack,topicType,boardId,boardName,classifyId,isTitle)
+    sq.pulishTopic(function(result){
+                                        alert(result.errInfo);
+                                        },3,61,'浮花浪蕊');
+}
+
+//回复帖子 测试JS回帖
+function replyTopic(){
+
+    //回复帖子 replyTopic(callBack,topicId,referenceTopicId,boradId)
+    sq.replyTopic(function(result){
+        alert(result.errInfo);
+    },542,0,61);
+}
+
+//引用回复帖子 测试JS回帖
+function replyTopic2(){
+    
+    //回复帖子 replyTopic(callBack,topicId,referenceTopicId,boradId)
+    sq.replyTopic(function(result){
+                                       alert(result.errInfo);
+                                       },542,1312,61);
+}
+
+//帖子详情 测试JS回帖
+function topicDetail(){
+    //type 1:帖子 2文章
+    //帖子详情 topicDetail(topicId,boardId,type)
+    sq.topicDetail(542,61,1);
+}
+
+//文章详情 一二三四五楼
+function topicDetail2(){
+    //type 1:帖子 2文章
+    //帖子详情 topicDetail(topicId,boardId,type)
+    sq.topicDetail(1,0,2);
+}
+
+function scan(){
+    //扫描二维码
+    sq.scan(function(result){
+        alert(result.errInfo + ' ' +result.url);
+    });
+}
+
+function urlRequest(){
+    //打开新的web组件 urlRequest(url)
+    sq.urlRequest('http://www.baidu.com', function(){
+    	alert("urlRequest callback");
+    });
+}
+
+function imagePreview(){
+    var imageArray=['http://pic15.nipic.com/20110720/7434631_111124480000_2.jpg','http://www.fansimg.com/uploads2010/10/userid219491time20101013060759.jpg','http://pica.nipic.com/2007-11-15/2007111510424972_2.jpg'];
+
+    //查看大图 imagePreview(imageArray, position);
+    sq.imagePreview(imageArray,1);
+}
+
+function getVersion(){
+    //version
+    //build
+    //platform
+    //js
+    //获取应用版本信息
+    sq.getVersion(function(result){
+        alert(JSON.stringify(result));
+    });
+}
+
+//自定义浏览器顶部导航功能
+function customButton(){
+
+//TOPBAR_USERINFO 用户中心;
+//TOPBAR_SEARCH 搜索;
+//TOPBAR_SIGN 签到;
+//TOPBAR_SCAN 扫一扫;
+//TOPBAR_FASTTEXT 快速文本发表;
+//TOPBAR_FASTIMAGE 快速图片发表;
+//TOPBAR_FASTCAMERA 拍照发表;
+//TOPBAR_FASTAUDIO 语音发表;
+//TOPBAR_WEBAPP webapp;
+//TOPBAR_REFRESH 刷新;
+//TOPBAR_COPY 复制链接;
+//TOPBAR_SHARE 分享;
+//TOPBAR_ACTION 自定义功能;
+    
+    var json1 = {
+        button:[{
+                value:'分享',
+                type:TOPBAR_SHARE
+                },
+                {
+                value:'二维码',
+                type:TOPBAR_SCAN
+                },
+                {
+                value:'action',
+                type:TOPBAR_ACTION,
+                action:'1234'
+                }],
+                callBack:function(action){
+                    alert(action)
+                }
+    }
+    var json2 = {
+        button:{
+                value:'更多',
+                icon:'more',
+                type:TOPBAR_ACTION,
+                action:'1234'
+                },
+                callBack:function(action){
+                    alert(action)
+                }
+    }
+    var json3 = {
+        interceptBackPress:true,
+        button:{
+            value:'更多',
+            icon:'more',
+            type:TOPBAR_ACTION,
+            action:'234'
+        },
+        callBack:function(action){
+            alert(action)
+        }
+    }
+    sq.customNavBar(json1);
+    
+    
+}
+
+function encrypt(str){
+    sq.encrypt(function(result){
+        //encrypt
+        //source
+        alert(JSON.stringify(result));
+    },'aaaaa');
+    
+}
+
+function getLocation(){
+    sq.getLocation(function(result){
+        alert(JSON.stringify(result));
+    });
+}
+
+function closeActivity(){
+    sq.closeActivity();
+}
+
+//payRequest(callBack, payType, payParam)
+//payType 1:微信支付
+function payWechat(){
+    var payParam ={
+        appid:'wxb4ba3c02aa476ea1',
+        partnerid:'10000100',
+        prepayid:'wx201510231559061d182b8f4a0880414770',
+        attach:'Sign=WXPay',//package扩展字段
+        noncestr:'397fb66686fa7d6be8c564a85131387e',
+        timestamp:'1445587146',
+        sign:'7D874C02D58F6C49ED271230BEBCAE9B'
+    };
+    
+    sq.payRequest(function(result){
+        //回调  type:支付平台  1：微信
+        alert(JSON.stringify(result));
+    },1,JSON.stringify(payParam));
+}
+
+//customModule(moduleId)
+function customModule(){
+    sq.customModule(1);
+}
+
+
+//结果显示 测试
+function showResult(text) {
+    document.getElementById("result").innerText = text;
+};
+
+function showReply() {
+	sq3.reply({
+		isHide: false,
+		boardId: 50, // 板块ID
+		topicId: 2964, // 帖子ID
+		toReplyId: 5932, // 引用的回复ID
+		isQuote: true, // 是否引用
+		beforeAsyncProcess: function(data) {
+			if (!data) {
+        		return;
+        	}
+
+        	var userIdsStr = "";
+        	for (var key in data.userIds) {
+        		userIdsStr += data.userIds[key] + "|";
+        	}
+
+        	var picturesStr = "";
+        	for (var key in data.pictures) {
+        		picturesStr += data.pictures[key] + "|";
+        	}
+
+        	var text = "reply success "
+        			 + "content: " + data.content
+        			 + ", locationStr: " + data.locationStr
+        			 + ", longitude: " + data.longitude
+        			 + ", latitude: " + data.latitude
+        			 + ", isOpenLocation: " + data.isOpenLocation
+        			 + ", audioPath: " + data.audioPath
+        			 + ", audioLen: " + data.audioLen
+        			 + ", pictures: " + picturesStr // 本地图片地址，如：file:///storage/emulated/0/DCIM/Screenshots/Screenshot_2016-07-28-11-46-18_com.pili.pldroid.streaming.camera.demo.png|file:///storage/emulated/0/DCIM/Screenshots/Screenshot_2016-07-28-11-46-18_com.pili.pldroid.streaming.camera.demo.png
+        			 + ", userIds: " + userIdsStr; // @用户ID，如：336|517
+
+            showResult(text);
+		},
+        success: function(data) {
+        },
+        error: function(data) {
+        	// data: json = {errNo: int, errMsg: String}
+            showResult("reply error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        	// result true or false
+            showResult("complete " + result);
+        }
+    });
+}
+
+function showActicleReply(){
+	sq3.reply({
+		isHide: false,
+		aid:6,//文章ID
+		toReplyId: 331, // 引用的回复ID
+		isQuote: true, // 是否引用
+		beforeAsyncProcess: function(data) {
+			if (!data) {
+        		return;
+        	}
+
+        	var text = "reply success "
+        			 + "content: " + data.content
+        			 + ", locationStr: " + data.locationStr
+        			 + ", longitude: " + data.longitude
+        			 + ", latitude: " + data.latitude
+        			 + ", isOpenLocation: " + data.isOpenLocation
+        			 + ", audioPath: " + data.audioPath
+        			 + ", audioLen: " + data.audioLen
+        			 + ", pictures: " + picturesStr // 本地图片地址，如：file:///storage/emulated/0/DCIM/Screenshots/Screenshot_2016-07-28-11-46-18_com.pili.pldroid.streaming.camera.demo.png|file:///storage/emulated/0/DCIM/Screenshots/Screenshot_2016-07-28-11-46-18_com.pili.pldroid.streaming.camera.demo.png
+        			 + ", userIds: " + userIdsStr; // @用户ID，如：336|517
+
+            showResult(text);
+		},
+        success: function(data) {
+        },
+        error: function(data) {
+        	// data: json = {errNo: int, errMsg: String}
+            showResult("reply error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        	// result true or false
+            showResult("complete " + result);
+        }
+    });
+}
+
+function previewImage() {
+	sq3.previewImage({
+		urls: [
+			"https://img3.doubanio.com/view/photo/photo/public/p2377394531.jpg",
+			"https://img1.doubanio.com/view/photo/photo/public/p2377395867.jpg",
+			"https://img1.doubanio.com/view/photo/photo/public/p2377394738.jpg",
+			"https://img3.doubanio.com/view/photo/photo/public/p2377394605.jpg",
+			"https://img3.doubanio.com/view/photo/photo/public/p2377394766.jpg"
+		],
+		currUrl: "https://img1.doubanio.com/view/photo/photo/public/p2377394738.jpg",
+        success: function(data) {
+            showResult("reply success type: " + data.type + ", isCancel: " + data.isCancel);
+        },
+        error: function(data) {
+            showResult("reply error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+function share2() {
+	sq3.share({
+		type: "all", // 分享类型，wechat,qq,weibo,facebook,qqzone,wechattimeline,all
+		title: "标题", // 分享标题
+		content: "内容", // 分享内容
+		url: "http://www.baidu.com", // 分享URL
+		picUrl: "http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg", // 分享图片URL
+		topicId: 2, // 分享出去帖子ID
+		aid: 0,
+        success: function(data) {
+        },
+        error: function(data) {
+            showResult("share2 error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+function shareTypes() {
+	sq3.shareTypes({
+		success: function(data) {
+			// ["wechat","qq","weibo","facebook","qqzone","wechattimeline"]
+			for (var key in data) {
+				alert(data[key]);
+			}
+        },
+        error: function(data) {
+            showResult("shareTypes error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+	});
+}
+
+function startTalkTopic() {
+	sq3.startTalkTopic({
+		topicId: 2962,
+		success: function(data) {
+        	alert(JSON.stringify(data)); // 刷新页面时，无法获取回调
+        },
+        error: function(data) {
+            showResult("startTalkTopic error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+	});
+}
+
+function startChat(){
+    sq3.startChat({
+        userId: 354,
+        userName: 'haha',
+        userAvator: 'http://h.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=06657d529a22720e7b9beafc4bfb267e/b219ebc4b74543a98db422fc1c178a82b9011456.jpg',
+        success: function(data) {
+            alert(JSON.stringify(data));
+        },
+        error: function(data) {
+            showResult("startChat error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+function startPhotoUpload(){
+    sq3.startPhotoUpload({
+        moduleType:'forum',//附件上传来源模块('forum：帖子，album：相册，pm：私信，topic:话题, plugin:插件，默认：plugin)
+        boardId:111,//type:forum 时 boardId 必填
+        albumId:111,//type:album 时 albumId 必填
+        beforeAsyncProcess: function(data) {
+            showResult(data);
+        },
+        success: function(data) {
+            alert(JSON.stringify(data));
+            showResult("上传成功");
+        },
+        error: function(data) {
+            showResult("startPhotoUpload error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+function toast(text, isLong) {
+    sq3.toast({
+        text: text,
+        isLong: isLong
+    });
+}
+
+//普通帖不带标题 无板块
+function publish() {
+    sq3.publish({
+        boardId: 0,
+        boardName: "",
+        classifyId: 0,
+        hasTitle: false,
+        talkId: 0,
+        success: function(data) {
+            alert(JSON.stringify(data));
+        },
+        error: function(data) {
+            showResult("publish error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+//普通帖带标题 浮花浪蕊
+function publish2() {
+    sq3.publish({
+        boardId: 61,
+        boardName: "浮花浪蕊",
+        classifyId: 0,
+        hasTitle: true,
+        talkId: 0,
+        success: function(data) {
+            alert(JSON.stringify(data));
+        },
+        error: function(data) {
+            showResult("publish error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+
+//普通帖带标题 紫玉成烟 开心分类
+function publish3() {
+    sq3.publish({
+        boardId: 50,
+        boardName: "紫玉成烟",
+        classifyId: 1,
+        hasTitle: true,
+        talkId: 0,
+        success: function(data) {
+            alert(JSON.stringify(data));
+        },
+        error: function(data) {
+            showResult("publish error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+        },
+        complete: function(result) {
+        }
+    });
+}
+//话题内发帖
+function publish4() {
+    sq3.publish({
+        boardId: 53,
+        boardName: "D3-4雅韵翩然",
+        classifyId: 0,
+        hasTitle: true,
+        talkId: 217,
+        title: "哈哈哈",
+        success: function(data) {
+                alert(JSON.stringify(data));
+        },
+        error: function(data) {
+                showResult("publish error errNo: " + data.errNo + ", errMsg: " + data.errMsg);
+            },
+        complete: function(result) {
+        }
+    });
+}
+
+
+
+
+</script>
+
+</html>
