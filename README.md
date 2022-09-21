@@ -17,7 +17,7 @@
 
 [开源版](https://ext.dcloud.net.cn/plugin?id=5450)
 
-### issues
+### 常见问题
 
 + 板块不显示
 
@@ -41,6 +41,8 @@
 
 + 您当前的访问请求当中含有非法字符，已经被系统拒绝
 
+解决方法1：
+
 ```php
 // ./source/class/discuz/discuz_application.php
 // 修改 _xss_check() 方法
@@ -59,6 +61,16 @@ return true;
 
 
 }
+```
+
+解决方法2：
+
+通过修改discuz站点的配置文件config/config_global.php，把安全检查禁用
+
+```php
+$_config['security']['urlxssdefend'] = 1;
+// 改为
+$_config['security']['urlxssdefend'] = 0;
 ```
 
 + 帖子图片不显示
