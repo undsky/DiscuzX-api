@@ -26,18 +26,18 @@
 
 + #### 板块分类设置
 
-![](/resource/A6F0136B-2EC8-41E3-91C4-28678C6B3366.png)
+![](/resource/板块分类设置.png)
 
 + #### 开启 HTTPS
 
-![](/resource/D922C2AB-A5E2-4BCF-AC6F-960A3B53EFFF.png)
-![](/resource/20FC4FAE-60D9-4F14-B08A-F438ADBEB603.png)
+![](/resource/开启HTTPS1.png)
+![](/resource/开启HTTPS2.png)
 
 + #### 开启相册
 
 后台--用户--用户组--编辑--空间相关--上传图片选择:是 上传图片需要审核:否 相册单张图片最大尺寸(单位K 1M=1024K)
 
-![](/resource/DFD49037-FF1F-405B-AF00-BF308ACCA60E.png)
+![](/resource/开启相册.png)
 
 + #### 您当前的访问请求当中含有非法字符，已经被系统拒绝
 
@@ -80,7 +80,7 @@ update  表前缀_common_usergroup_field set allowgetimage = 1
 
 ```
 
-![](/resource/19D88D48-93A9-41CC-8EF9-0390F66B9023.png)
+![](/resource/帖子图片不显示.png)
 
 + #### 修改头像无效
 
@@ -97,3 +97,11 @@ error_reporting(E_ALL & ~E_NOTICE); 或error_reporting(E_ALL ^ E_NOTICE);
 
 修改php.ini
 error_reporting = E_ALL & ~E_NOTICE
+
++ #### 安装本地插件
+
+![](/resource/安装本地插件.png)
+
+安装本地插件提示非正版
+
+![](/resource/安装本地插件提示非正版.png)
