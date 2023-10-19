@@ -17,6 +17,16 @@
 
 [开源版](https://ext.dcloud.net.cn/plugin?id=5450)
 
+1. 修改接口地址
+
+``` javascript 
+// ./common/request.js
+const config = {
+	baseURL: 'https://你的论坛网址/mobcent/app/web/index.php',
+	...
+}
+```
+
 ### 常见问题
 
 + #### 板块不显示
