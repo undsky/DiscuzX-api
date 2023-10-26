@@ -13,7 +13,7 @@
  * @package system
  * @since 1.0
  */
-define('MOBCENT_FRAMEWORK', '<a href="http://app.xiaoyun.com/">小云APP</a>');
+define('MOBCENT_FRAMEWORK', '<a href="https://ext.dcloud.net.cn/plugin?id=5450">uni-discuzx</a>');
 
 /**
  * @var array List of requirements (name, required or not, result, used by, memo)

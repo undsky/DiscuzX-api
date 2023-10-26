@@ -1,15 +1,17 @@
 # DiscuzX
 
-> 使用范围：DiscuzX2.5，X3，X3.1，X3.2，X3.3，X3.4、F1.0，L1.0 GBK/简体UTF-8/BIG5/繁体BIG5
+> 使用范围：DiscuzX2.5，X3，X3.1，X3.2，X3.3，X3.4，X3.5、F1.0，L1.0 GBK/简体UTF-8/BIG5/繁体BIG5
 
 ### 全新安装
 
-[Discuz!X3.4全新安装教程](https://www.dismall.com/thread-77-1-1.html)
+[Discuz!X3.4安装教程](https://www.dismall.com/thread-77-1-1.html)
+
+[Discuz!X3.5安装教程](https://www.dismall.com/thread-14660-1-1.html)
 
 ### 插件部署
 
-1. 安装 [小云插件](https://addon.dismall.com/plugins/appbyme_app.html)
-2. 安装 [签到插件](https://addon.dismall.com/plugins/dsu_paulsign.html)
+1. 数据库运行 `mysql.sql`（将 `表前缀_` 改为实际前缀）
+2. 安装 [签到插件](https://addon.dismall.com/plugins/dsu_paulsign.html)（非必选）
 1. 将mobcent接口包上传到 Discuz 根目录
 2. 访问链接 <http://你的论坛网址/mobcent/requirements/index.php> 确保服务器的环境符合插件要求
 
@@ -31,8 +33,7 @@ const config = {
 
 + #### 板块不显示
 
-1. 论坛/板块管理，设置两级
-1. 应用/小云APP手机客户端/设置/能在客户端显示的版块
+论坛/板块管理，设置两级
 
 + #### 板块分类设置
 
@@ -90,8 +91,6 @@ update  表前缀_common_usergroup_field set allowgetimage = 1
 
 ```
 
-![](/resource/帖子图片不显示.png)
-
 + #### 修改头像无效
 
 站长/UCenter设置/头像调用方式：使用静态地址调用头像
@@ -107,11 +106,3 @@ error_reporting(E_ALL & ~E_NOTICE); 或error_reporting(E_ALL ^ E_NOTICE);
 
 修改php.ini
 error_reporting = E_ALL & ~E_NOTICE
-
-+ #### 安装本地插件
-
-![](/resource/安装本地插件.png)
-
-安装本地插件提示非正版
-
-![](/resource/安装本地插件提示非正版.png)
