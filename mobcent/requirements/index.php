@@ -13,7 +13,7 @@
  * @package system
  * @since 1.0
  */
-define('MOBCENT_FRAMEWORK', '<a href="https://ext.dcloud.net.cn/plugin?id=5450">uni-discuzx</a>');
+define('MOBCENT_FRAMEWORK', '<a href="https://ext.dcloud.net.cn/plugin?id=5450">uni-DiscuzX</a>');
 
 /**
  * @var array List of requirements (name, required or not, result, used by, memo)
@@ -75,7 +75,7 @@ $requirements = array(
         false,
         function_exists('curl_init'),
         '<a href="http://www.yiiframework.com">Yii Framework</a>',
-        t('yii', '会影响客户端性能速度, 如未通过,<a href="http://addon.discuz.com/?@appbyme_app.plugin.doc/FAQ">请点击查看说明</a>'),
+        t('yii', '会影响客户端性能速度'),
     ),
     array(
         t('yii', 'openssl 扩展模块'),

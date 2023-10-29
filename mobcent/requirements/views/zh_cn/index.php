@@ -4,30 +4,30 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-language" content="en"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<title>uni-discuzx插件 配置需求检查</title>
+	<title>uni-DiscuzX插件 配置需求检查</title>
 </head>
 
 <body>
 <div id="page">
 
 	<div id="header">
-		<h1> uni-discuzx插件 配置需求检查</h1>
+		<h1> uni-DiscuzX插件 配置需求检查</h1>
 	</div><!-- header-->
 
 	<div id="content">
 		<h2>检查内容</h2>
 		<p>
-			本网页用于确认您的服务器配置是否能满足运行<a href="https://ext.dcloud.net.cn/plugin?id=5450"> uni-discuzx </a> Web应用的要求。它将检查服务器所运行的PHP版本，查看是否安装了合适的PHP扩展模块，以及确认php.ini文件是否正确设置。
+			本网页用于确认您的服务器配置是否能满足运行<a href="https://ext.dcloud.net.cn/plugin?id=5450"> uni-DiscuzX </a> Web应用的要求。它将检查服务器所运行的PHP版本，查看是否安装了合适的PHP扩展模块，以及确认php.ini文件是否正确设置。
 		</p>
 
 		<h2>检查结果</h2>
 		<p class="<?php echo $result>0 ? 'passed' : ($result<0 ? 'warning' : 'failed'); ?>">
 			<?php if($result>0): ?>
-				恭喜！您的服务器配置完全符合 uni-discuzx 的要求。
+				恭喜！您的服务器配置完全符合 uni-DiscuzX 的要求。
 			<?php elseif($result<0): ?>
-				您的服务器配置符合 uni-discuzx 的最低要求。如果您需要使用特定的功能，请关注如下警告。
+				您的服务器配置符合 uni-DiscuzX 的最低要求。如果您需要使用特定的功能，请关注如下警告。
 			<?php else: ?>
-				您的服务器配置未能满足 uni-discuzx 的要求。
+				您的服务器配置未能满足 uni-DiscuzX 的要求。
 			<?php endif; ?>
 		</p>
 
@@ -46,7 +46,7 @@
 						<?php echo $requirement[2] ? '通过' : (!$requirement[1] ? '警告' : '未通过'); ?>
 					</td>
 					<td>
-						<?php echo 'uni-discuzx'; //echo $requirement[3]; ?>
+						<?php echo 'uni-DiscuzX'; //echo $requirement[3]; ?>
 					</td>
 					<td>
 						<?php echo $requirement[4]; ?>

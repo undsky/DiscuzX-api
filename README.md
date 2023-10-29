@@ -10,10 +10,10 @@
 
 ### 插件部署
 
-1. 数据库运行 `mysql.sql`（将 `表前缀_` 改为实际前缀）
-2. 安装 [签到插件](https://addon.dismall.com/plugins/dsu_paulsign.html)（非必选）
-1. 将mobcent接口包上传到 Discuz 根目录
-2. 访问链接 <http://你的论坛网址/mobcent/requirements/index.php> 确保服务器的环境符合插件要求
+1. 数据库运行 `bbs.sql`（将 `bbs_` 替换为你论坛的表前缀）
+2. 将mobcent接口包上传到 Discuz 根目录
+3. 访问链接 <http://你的论坛网址/mobcent/requirements/index.php> 确保服务器的环境符合插件要求
+4. 安装 [签到插件](https://addon.dismall.com/plugins/dsu_paulsign.html)（非必选）
 
 ### uni-app 客户端
 
