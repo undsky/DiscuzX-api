@@ -10,7 +10,7 @@
 
 ### 插件部署
 
-1. 数据库运行 `bbs.sql`（将 `bbs_` 替换为你论坛的表前缀）
+1. 数据库运行 `bbs.sql`（!!! 将 `bbs_` 替换为你论坛的表前缀 !!!）
 2. 将mobcent接口包上传到 Discuz 根目录
 3. 访问链接 <http://你的论坛网址/mobcent/requirements/index.php> 确保服务器的环境符合插件要求
 4. 安装 [签到插件](https://addon.dismall.com/plugins/dsu_paulsign.html)（非必选）
@@ -31,9 +31,9 @@ const config = {
 
 ### 常见问题
 
-+ #### 板块不显示
++ #### 板块设置
 
-论坛/板块管理，设置两级
+论坛/板块管理
 
 + #### 板块分类设置
 
@@ -50,7 +50,7 @@ const config = {
 
 ![](/resource/开启相册.png)
 
-+ #### 您当前的访问请求当中含有非法字符，已经被系统拒绝
++ #### 无法评论和发帖（您当前的访问请求当中含有非法字符，已经被系统拒绝）
 
 解决方法1：
 
@@ -90,6 +90,8 @@ $_config['security']['urlxssdefend'] = 0;
 update  表前缀_common_usergroup_field set allowgetimage = 1
 
 ```
+
+!!! 更新缓存 !!!
 
 + #### 修改头像无效
 
