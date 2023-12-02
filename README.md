@@ -1,4 +1,4 @@
-# DiscuzX
+# DiscuzX-api
 
 > 使用范围：DiscuzX2.5，X3，X3.1，X3.2，X3.3，X3.4，X3.5、F1.0，L1.0 GBK/简体UTF-8/BIG5/繁体BIG5
 
