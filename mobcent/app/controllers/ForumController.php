@@ -62,7 +62,7 @@ class ForumController extends MobcentController
             'vote'              => false,
             'topicrate'         => true,
             'ratelistview'      => false,
-            'classification'    => true,
+            'classification'    => false,
             'sendattachmentex'  => true,
             'topicadminex'      => true,
             'checktopicadmin'   => true,
