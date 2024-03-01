@@ -443,6 +443,10 @@ class UserUtils {
         //支持UID Username Email登陆
         $result = userlogin($_GET['username'], $_GET['password'], $_GET['questionid'], $_GET['answer'], 'auto', $_G['clientip']);
 
+        if ($result['freeze'] == 1) {
+            return self::errorInfo(Webutils::t('账号已注销'));
+        }
+
         if ($result['ucresult']['uid'] == '-3') {
             $userInfo = DzCommonMember::getUidByUsername($result['ucresult']['username']);
             $result['ucresult']['uid'] = $userInfo['uid'];
