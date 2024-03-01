@@ -443,10 +443,6 @@ class UserUtils {
         //支持UID Username Email登陆
         $result = userlogin($_GET['username'], $_GET['password'], $_GET['questionid'], $_GET['answer'], 'auto', $_G['clientip']);
 
-        if ($result['freeze'] == 1) {
-            return self::errorInfo(Webutils::t('账号已注销'));
-        }
-
         if ($result['ucresult']['uid'] == '-3') {
             $userInfo = DzCommonMember::getUidByUsername($result['ucresult']['username']);
             $result['ucresult']['uid'] = $userInfo['uid'];
@@ -460,7 +456,7 @@ class UserUtils {
         $ctlObj = new logging_ctl();
         $ctlObj->setting = $_G['setting'];
 
-        if ($result['status'] == -1) {
+        if ($result['status'] == -1 || $result['member']['status'] == -1) {
             if (!$ctlObj->setting['fastactivation']) {
                 // 帐号没有激活
                 return self::errorInfo(Yii::t('mobcent', 'location_activation'));

@@ -127,7 +127,7 @@ return array(
     'favorite_does_not_exist'                    => '02000031:抱歉，您指定的收藏不存在',
     'user_info_avatar_error'                     => '03000001:用户头像保存失败',
     'user_name_null'                             => '03000001:输入的用户名为空',
-    'location_activation'                        => '03000001:当前用户需要激活,请到pc端激活.',
+    'location_activation'                        => '03000002:抱歉，您的 IP 地址不在允许范围内，或您的账号被禁用，无法访问本站点',
     'mobcent_login_status'                       => '03000001:当前登录状态失效.',
     'you_have_friends'                           => '020000032:你们已成为好友',
     'no_privilege_addfriend'                     => '020000033:抱歉，您目前没有权限添加好友',
