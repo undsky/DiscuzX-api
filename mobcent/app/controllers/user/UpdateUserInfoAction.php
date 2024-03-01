@@ -16,7 +16,10 @@ class UpdateUserInfoAction extends MobcentAction {
 
     public function run($type, $gender = '', $oldPassword = '', $newPassword = '', $userInfo = '', $sign = '') {
         $res = $this->initWebApiArray();
-        if ($type == 'info') {
+        if ($type == 'freeze') {
+            global $_G;
+            C::t('common_member')->update($_G['uid'], array('freeze'=>'1'));
+        } elseif ($type == 'info') {
             $res = $this->_updateUser($res, $gender, $sign);
         } elseif ($type == 'password') {
             $res = $this->_updatePass($res, $oldPassword, $newPassword);
