@@ -99,6 +99,21 @@ update  表前缀_common_usergroup_field set allowgetimage = 1
 
 + #### Undefined offset: 1 in \www\mobcent\app\components\discuz\discuz_core.php on line 100
 
+3.5 修改头像无效
+
+```php
+// uc_client\client.php 文件中添加方法：
+
+function uc_stripslashes($string) {
+	!defined('MAGIC_QUOTES_GPC') && define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc());
+	if(MAGIC_QUOTES_GPC) {
+		return stripslashes($string);
+	} else {
+		return $string;
+	}
+}
+```
+
 解决方法1：
 
 在程序开头加一句：
