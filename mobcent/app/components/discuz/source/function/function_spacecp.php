@@ -15,7 +15,7 @@ function mobcent_pic_save($FILE, $albumid, $title, $iswatermark = true, $catid =
 
     $allowpictype = array('jpg','jpeg','gif','png');
 
-    $upload = new Newmob_upload();
+    $upload = new discuz_upload;//Newmob_upload();
     $upload->init($FILE, 'album');
 
     if($upload->error()) {
