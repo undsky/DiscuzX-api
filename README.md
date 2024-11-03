@@ -97,7 +97,6 @@ update  表前缀_common_usergroup_field set allowgetimage = 1
 
 站长/UCenter设置/头像调用方式：使用静态地址调用头像
 
-+ #### Undefined offset: 1 in \www\mobcent\app\components\discuz\discuz_core.php on line 100
 
 3.5 修改头像无效
 
@@ -113,6 +112,10 @@ function uc_stripslashes($string) {
 	}
 }
 ```
+
+
++ #### Undefined offset: 1 in \www\mobcent\app\components\discuz\discuz_core.php on line 100
+
 
 解决方法1：
 
