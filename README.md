@@ -2,6 +2,15 @@
 
 > 使用范围：DiscuzX2.5，X3，X3.1，X3.2，X3.3，X3.4，X3.5、F1.0，L1.0 GBK/简体UTF-8/BIG5/繁体BIG5
 
+### 开源地址（给个 star）
+
+[https://github.com/undsky/DiscuzX-api](https://github.com/undsky/DiscuzX-api)
+
+### 个人主页
+
+[https://www.undsky.com/](https://www.undsky.com/)
+
+
 ### 全新安装
 
 [Discuz!X3.4安装教程](https://www.dismall.com/thread-77-1-1.html)
